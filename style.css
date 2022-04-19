@@ -1,3 +1,13 @@
+nav
+{
+display: flex;
+}
+
+#np1, #np2
+{
+    text-align: right;
+}
+
 #title
 {
 text-align: center;
