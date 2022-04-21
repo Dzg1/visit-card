@@ -1,17 +1,70 @@
 *
 {
+     list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
     margin: 0;
     padding: 0;
-    list-style: none;
 }
+nav
+{
+    background: linear-gradient(313deg, white 0%, rgba(54,162,188,0) 60%, rgba(54,162,188,0.01) 65%, rgba(54,162,188,0.02) 70%, rgba(54,162,188,0.05) 75%, rgba(54,162,188,0.1) 80%, rgba(54,162,188,0.2) 85%, rgba(54,162,188,0.35) 90%, rgba(54,162,188,0.5) 95%, rgba(54,162,188,1) 100%);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+   left: 0; right: 0; top: 0;
+    
 
-
+}
 .nav-list
 {
+    padding: 1rem 0 ;
     display: flex;
+   align-items: right;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
    
 }
+.nav-item
+{
+   margin-right: 2rem;
+   font-weight: 600;
+}
+
+.nav-item a 
+{
+    color: black;
+    letter-spacing: 1.2px;
+}
+.nav-name
+{
+    margin-left: 2rem;
+    margin-right: auto;
+}
+.nav-name a
+{
+    color: white;
+}
+
+ /*************/
+
 #title
 {
-    margin-top: 60px;
+
+height:600px;
+width: 100%;
+background: url(./objet/schema.png) center no-repeat;
+background-size:cover;
+position: fixed;
+ top: 60px;
+}
+
+#presentation
+{
+  margin-top: 660px;  
 }
