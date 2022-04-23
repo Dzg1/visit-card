@@ -17,6 +17,7 @@ nav
     width: 100%;
     position: fixed;
    left: 0; right: 0; top: 0;
+   opacity: 1;
     
 
 }
@@ -62,9 +63,16 @@ background: url(./objet/schema.png) center no-repeat;
 background-size:cover;
 position: fixed;
  top: 60px;
+ z-index: -1;
+}
+
+.container
+{
+    text-align: center;
 }
 
 #presentation
 {
   margin-top: 660px;  
+  background: white;
 }
