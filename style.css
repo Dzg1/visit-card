@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "dis";
+    src: url(./objet/font/Disruptors\ Script.otf);
+    font-family: "sans";
+    src: url(./objet/font/OpenSans-Regular.ttf);
+}
 *
 {
      list-style: none;
@@ -13,7 +19,7 @@ body
 nav
 {
     background: linear-gradient(313deg, white 0%, rgba(54,162,188,0) 60%, rgba(54,162,188,0.01) 65%, rgba(54,162,188,0.02) 70%, rgba(54,162,188,0.05) 75%, rgba(54,162,188,0.1) 80%, rgba(54,162,188,0.2) 85%, rgba(54,162,188,0.35) 90%, rgba(54,162,188,0.5) 95%, rgba(54,162,188,1) 100%);
-    height: 60px;
+    height: 30px;
     width: 100%;
     position: fixed;
    left: 0; right: 0; top: 0;
@@ -23,7 +29,7 @@ nav
 }
 .nav-list
 {
-    padding: 1rem 0 ;
+    padding: 7px 0 ;
     display: flex;
    align-items: right;
    justify-content: flex-end;
@@ -33,24 +39,31 @@ nav
 }
 .nav-item
 {
-   margin-right: 2rem;
-   font-weight: 600;
+    margin-right: 2rem;
+    font-weight: 600;
 }
 
 .nav-item a 
 {
     color: black;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.4px;
+    color: blue;
+    font-family:  "sans" ;
 }
+
 .nav-name
 {
+    font-size: 2rem;
     margin-left: 2rem;
     margin-right: auto;
 }
+
 .nav-name a
 {
-    color: white;
+    color: orange;
+    font-family: dis, sans-serif;
 }
+
 
  /*************/
 
@@ -59,11 +72,10 @@ nav
 
 height:600px;
 width: 100%;
-background: url(./objet/schema.png) center no-repeat;
-background-size:cover;
-position: fixed;
- top: 60px;
+
+ background-position: fixed;
  z-index: -1;
+ text-align: center;
 }
 
 .container
