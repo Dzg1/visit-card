@@ -1,14 +1,18 @@
 @font-face {
-    font-family: "dis";
-    src: url(./objet/font/Disruptors\ Script.otf);
+    font-family: "nermola";
+    src: url(./objet/font/NermolaScript-Regular.ttf) format('truetype');
     font-family: "sans";
     src: url(./objet/font/OpenSans-Regular.ttf);
 }
+
 *
 {
      list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    --greeen: rgb(31, 224, 124);
+    --bluue: rgb(57, 166, 218);
+    --bluesoft: rgb(103, 222, 200)
 }
 
 body
@@ -18,8 +22,8 @@ body
 }
 nav
 {
-    background: linear-gradient(313deg, white 0%, rgba(54,162,188,0) 60%, rgba(54,162,188,0.01) 65%, rgba(54,162,188,0.02) 70%, rgba(54,162,188,0.05) 75%, rgba(54,162,188,0.1) 80%, rgba(54,162,188,0.2) 85%, rgba(54,162,188,0.35) 90%, rgba(54,162,188,0.5) 95%, rgba(54,162,188,1) 100%);
-    height: 30px;
+    background: linear-gradient(313deg, white 0%, rgba(103, 222, 200,0) 60%, rgba(103, 222, 200,0.01) 65%, rgba(103, 222, 200,0.02) 70%, rgba(103, 222, 200,0.05) 75%, rgba(103, 222, 200,0.1) 80%, rgba(103, 222, 200,0.2) 85%, rgba(103, 222, 200,0.35) 90%, rgba(103, 222, 200,0.5) 95%, rgba(103, 222, 200,1) 100%);
+    height: 60px;
     width: 100%;
     position: fixed;
    left: 0; right: 0; top: 0;
@@ -45,9 +49,9 @@ nav
 
 .nav-item a 
 {
-    color: black;
-    letter-spacing: 1.4px;
-    color: blue;
+   
+    letter-spacing: 3px;
+    color: var(--greeen);
     font-family:  "sans" ;
 }
 
@@ -60,8 +64,8 @@ nav
 
 .nav-name a
 {
-    color: orange;
-    font-family: dis, sans-serif;
+    color: var(--bluue);
+    font-family: 'nermola';
 }
 
 
@@ -70,10 +74,6 @@ nav
 #title
 {
 
-height:600px;
-width: 100%;
-
- background-position: fixed;
  z-index: -1;
  text-align: center;
 }
@@ -85,6 +85,6 @@ width: 100%;
 
 #presentation
 {
-  margin-top: 660px;  
   background: white;
+  font-family: "nermola";
 }
