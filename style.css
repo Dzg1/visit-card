@@ -1,6 +1,8 @@
 @font-face {
     font-family: "nermola";
-    src: url(./objet/font/NermolaScript-Regular.ttf) format('truetype');
+    src: url(./objet/font/NermolaScript-Regular.ttf);
+}
+@font-face {
     font-family: "sans";
     src: url(./objet/font/OpenSans-Regular.ttf);
 }
@@ -45,6 +47,7 @@ nav
 {
     margin-right: 2rem;
     font-weight: 600;
+    font-size:  15px;
 }
 
 .nav-item a 
@@ -53,6 +56,14 @@ nav
     letter-spacing: 3px;
     color: var(--greeen);
     font-family:  "sans" ;
+    transition: 1.5s;
+}
+ 
+.nav-item a:hover
+{
+color: var(--bluue);
+text-decoration: underline ;
+text-transform: uppercase;
 }
 
 .nav-name
@@ -65,8 +76,16 @@ nav
 .nav-name a
 {
     color: var(--bluue);
-    font-family: 'nermola';
+    font-family: "nermola";
 }
+
+#menu{
+    display: flex;
+   
+   
+    color : var(--greeen);
+
+  }
 
 
  /*************/
@@ -81,10 +100,17 @@ nav
 .container
 {
     text-align: center;
+    width : 750px;
+    height : auto;
+    transition: 0.5s;
+}
+
+.container:hover
+{
+    transform: scale(1.2);
 }
 
 #presentation
 {
   background: white;
-  font-family: "nermola";
 }
