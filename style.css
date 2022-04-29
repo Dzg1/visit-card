@@ -83,7 +83,15 @@ text-transform: uppercase;
     color: var(--bluue);
     font-family: "nermola";
 }
-
+ 
+.main
+{
+   display: none;
+}
+#menu 
+{
+   margin-top: 16px;
+}
 /*
 #menu{
     display: flex;
