@@ -149,7 +149,6 @@ text-decoration: underline ;
 {
  text-align: center;
 }
-
 .container
 {
     text-align: center;
@@ -166,5 +165,6 @@ text-decoration: underline ;
 
 #presentation
 {
-  background: white;
+  background: var(--bluue);
+
 }
