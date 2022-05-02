@@ -160,11 +160,36 @@ text-decoration: underline ;
 
 .container:hover
 {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-
+#ptitle
+{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "nermola";
+    font-size: 2rem;
+    color:var(--bluesoft);
+}
 #presentation
 {
   background: var(--bluue);
+  text-align: center;
+  padding-bottom: 60px;
 
+}
+.card
+{
+    font-size: "nermola";
+    text-align: center;
+    margin: 0;
+    padding:0;
+    height: 400px;
+}
+
+/*******************/
+#contact
+{
+    font-size: "nermola";
+    height: 400px;
+    background: teal;
 }
