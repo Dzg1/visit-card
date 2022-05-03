@@ -29,9 +29,7 @@ nav
     width: 100%;
     position: fixed;
    left: 0; right: 0; top: 0;
-   opacity: 1;
-    
-
+   z-index: 1;
 }
 .nav-list
 {
@@ -73,7 +71,6 @@ text-decoration: underline ;
     font-size: 2rem;
     margin-left: 2rem;
     margin-right: auto;
-    
 }
 
 .nav-name a
@@ -147,22 +144,25 @@ text-decoration: underline ;
 
 #title
 {
- text-align: center;
+height: 550px;
+position: relative;
 }
-.container
+#logotitle
 {
-    text-align: center;
+   position: fixed;
+   top: 60px;
+   left: 50%;
+   transform: translate(-50%);
     width : 500px;
     height : auto;
-    transition: 0.5s;
-    z-index: -1;
+    z-index: -2;
 }
 
-.container:hover
+#logotitle:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
-#ptitle
+#presentationtitle
 {
     text-align: center;
     padding-top: 20px;
@@ -172,6 +172,7 @@ text-decoration: underline ;
 }
 #presentation
 {
+  
   background: var(--bluue);
   text-align: center;
   padding-bottom: 60px;
@@ -179,17 +180,30 @@ text-decoration: underline ;
 }
 .card
 {
-    font-size: "nermola";
+    background: white;
     text-align: center;
     margin: 0;
     padding:0;
     height: 400px;
+   
+}
+#cardtitle
+{
+    margin: 0;
+    padding-top: 20px;
+    font-family: "nermola";
+    text-align: center;
 }
 
 /*******************/
 #contact
 {
-    font-size: "nermola";
+    padding-top: 20px;
     height: 400px;
     background: teal;
+}
+#contacttitle
+{
+    font-family: "nermola";
+    text-align: center;
 }
