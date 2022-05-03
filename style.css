@@ -14,7 +14,7 @@
     text-decoration: none;
     --greeen: rgb(31, 224, 124);
     --bluue: rgb(57, 166, 218);
-    --bluesoft: rgb(103, 222, 200)
+    --bluesoft: rgb(103, 222, 200);
 }
 
 body
@@ -24,8 +24,8 @@ body
 }
 nav
 {
-    background: linear-gradient(313deg, white 0%, rgba(103, 222, 200,0) 60%, rgba(103, 222, 200,0.01) 65%, rgba(103, 222, 200,0.02) 70%, rgba(103, 222, 200,0.05) 75%, rgba(103, 222, 200,0.1) 80%, rgba(103, 222, 200,0.2) 85%, rgba(103, 222, 200,0.35) 90%, rgba(103, 222, 200,0.5) 95%, rgba(103, 222, 200,1) 100%);
-    height: 60px;
+    background: linear-gradient(313deg, teal 0%, rgb(57, 166, 218) 25% ,rgb(103, 222, 200) 50% ,rgb(31, 224, 124) 100% );
+    height: 70px;
     width: 100%;
     position: fixed;
    left: 0; right: 0; top: 0;
@@ -170,10 +170,11 @@ color : var(--greeen)
 }
 #reseaux
 {
+    border: solid 2px var(--bluue);
     text-align: center;
     height: 500px;
     width: 300px;
-    margin-top:90px;
+    margin-top:130px;
     margin-left: 30px;
 
 }
