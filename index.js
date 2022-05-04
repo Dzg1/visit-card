@@ -1,5 +1,7 @@
 const langue = document.getElementById("menu");
 const langues = document.getElementById("main");
+const logorso = document.getElementsByClassName("iconrso");
+const spanrso = document.getElementsByClassName("spanrso");
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
@@ -14,4 +16,9 @@ langues.addEventListener("mouseout", () => {
   langues.style.display = "none";
 });
 
-console.log(langues);
+logorso.addEventListener("mouseover", () => {
+  spanrso.style.opacity = "1";
+});
+logorso.addEventListener("mouseout", () => {
+  spanrso.style.opacity = "0";
+});
