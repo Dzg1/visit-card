@@ -178,12 +178,16 @@ color : var(--greeen)
 {
 width: 50px;
 height: 50px;
+transition: 1s;
 }
 .spanrso
 {
-    
+   opacity: ; 
 }
 .iconrso:hover
+{
+    transform: scale(1.2);
+}
 
 
 
