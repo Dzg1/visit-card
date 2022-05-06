@@ -10,6 +10,7 @@ const logorso4 = document.getElementById("iconrso4");
 const spanrso4 = document.getElementById("spanrso4");
 const logorso5 = document.getElementById("iconrso5");
 const spanrso5 = document.getElementById("spanrso5");
+const spanh2 = document.getElementById("spanh2");
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
@@ -28,34 +29,44 @@ langues.addEventListener("mouseout", () => {
 
 logorso1.addEventListener("mouseover", () => {
   spanrso1.style.opacity = "1";
+  spanh2.style.opacity = "0";
 });
 logorso1.addEventListener("mouseout", () => {
   spanrso1.style.opacity = "0";
+  spanh2.style.opacity = "1";
 });
 
 logorso2.addEventListener("mouseover", () => {
   spanrso2.style.opacity = "1";
+  spanh2.style.opacity = "0";
 });
 logorso2.addEventListener("mouseout", () => {
   spanrso2.style.opacity = "0";
+  spanh2.style.opacity = "1";
 });
 
 logorso3.addEventListener("mouseover", () => {
   spanrso3.style.opacity = "1";
+  spanh2.style.opacity = "0";
 });
 logorso3.addEventListener("mouseout", () => {
   spanrso3.style.opacity = "0";
+  spanh2.style.opacity = "1";
 });
 
 logorso4.addEventListener("mouseover", () => {
   spanrso4.style.opacity = "1";
+  spanh2.style.opacity = "0";
 });
 logorso4.addEventListener("mouseout", () => {
   spanrso4.style.opacity = "0";
+  spanh2.style.opacity = "1";
 });
 logorso5.addEventListener("mouseover", () => {
   spanrso5.style.opacity = "1";
+  spanh2.style.opacity = "0";
 });
 logorso5.addEventListener("mouseout", () => {
   spanrso5.style.opacity = "0";
+  spanh2.style.opacity = "1";
 });
