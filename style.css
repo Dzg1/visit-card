@@ -207,6 +207,7 @@ position: relative;
 .iconrso:hover
 {
     transform: scale(1.2);
+    animation-play-state: paused;
 }
 
 #description
@@ -226,15 +227,15 @@ position: relative;
     }
     10% 
     {
-     transform: translate(20px,20px);    
+     transform: translate(120px,120px);    
     }
     20% 
     {
-     transform: translate(20px,40px);    
+     transform: translate(120px,180px);    
     }
     30% 
     {
-     transform: translate(-10px,40px);    
+     transform: translate(-120px,140px);    
     }
     40% 
     {
@@ -242,11 +243,11 @@ position: relative;
     }
     50% 
     {
-     transform: translate(-180px,0px);    
+     transform: translate(-160px,0px);    
     }
     60%
     {        
-    transform: translate(-185px,110px);    
+    transform: translate(-165px,110px);    
     }
     70%
     {
@@ -267,7 +268,58 @@ position: relative;
 }
 #iconrso1
 {
-    animation: moovetwitter 15s linear ;
+    animation: moovetwitter 15s infinite ;
+}
+@keyframes moovediscord
+{
+    0% 
+    {
+     transform: translate(0px,0px);    
+    }
+    10% 
+    {
+     transform: translate(120px,120px);    
+    }
+    20% 
+    {
+     transform: translate(120px,180px);    
+    }
+    30% 
+    {
+     transform: translate(-120px,140px);    
+    }
+    40% 
+    {
+     transform: translate(-110px,140px);    
+    }
+    50% 
+    {
+     transform: translate(-160px,0px);    
+    }
+    60%
+    {        
+    transform: translate(-165px,110px);    
+    }
+    70%
+    {
+    transform: translate(-40px,-130px);
+    }
+    80%
+    {
+    transform: translate(-125px,-55px);
+    }
+    90%
+    {
+    transform: translate(-20px,100px);
+    }
+    100%
+    {
+    transform: translate(0px,0px);
+    }
+}
+#iconrso2
+{
+    animation: moovediscord infinite 5s ;
 }
 
 
