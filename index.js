@@ -11,6 +11,11 @@ const spanrso4 = document.getElementById("spanrso4");
 const logorso5 = document.getElementById("iconrso5");
 const spanrso5 = document.getElementById("spanrso5");
 const spanh2 = document.getElementById("spanh2");
+const randomx = Math.floor(Math.random() * 270);
+const randomy = Math.floor(Math.random() * 400);
+
+console.log(randomx);
+console.log(randomy);
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";

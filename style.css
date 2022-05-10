@@ -184,13 +184,14 @@ color : var(--greeen)
     width: 300px;
     margin-top:130px;
     margin-left: 30px;
-
+    cursor: url(./objet/cursor/crosshair.png), auto;
 }
+
 .spanrso
 {
    opacity:0 ; 
   position: absolute;
-  top: 25px;
+  top: 158px;
   left: 202px;
   font-family: "nermola";
   color: var(--greeen);
@@ -202,22 +203,243 @@ color : var(--greeen)
 width: 50px;
 height: 50px;
 transition: 1s;
-position: relative;
+cursor: url(./objet/cursor/crosshair.png), auto;
+position: absolute;
+top:200px;
+left:30px;
 }
-.iconrso:hover
+
+@keyframes moovegit
+{
+    0% 
+    {
+     transform: translate(270px,400px);    
+    }
+    10% 
+    {
+     transform: translate(120px,120px);    
+    }
+    20% 
+    {
+     transform: translate(120px,180px);    
+    }
+    30% 
+    {
+     transform: translate(-120px,140px);    
+    }
+    40% 
+    {
+     transform: translate(-110px,140px);    
+    }
+    50% 
+    {
+     transform: translate(-160px,0px);    
+    }
+    60%
+    {        
+    transform: translate(-165px,110px);    
+    }
+    70%
+    {
+    transform: translate(-40px,-10px);
+    }
+    80%
+    {
+    transform: translate(-125px,-55px);
+    }
+    90%
+    {
+    transform: translate(-20px,100px);
+    }
+    100%
+    {
+    transform: translate(0px,0px);
+    }
+}
+#iconrso1
+{
+    animation: moovegit 30s infinite ;
+}
+#iconrso1:hover
 {
     transform: scale(1.2);
     animation-play-state: paused;
+    background: teal;
+    border-radius: 50%;
 }
-
-#description
+@keyframes moovediscord
 {
-   border: 2px solid black; 
-   height:500px;
-   width:300px;
-   margin-top: 130px;
-   margin-right: 30px;
-   margin-left:auto;
+    0% 
+    {
+     transform: translate(0px,0px);    
+    }
+    10% 
+    {
+        transform: translate(-120px,140px);    
+    }
+    20% 
+    {
+        transform: translate(120px,160px);    
+    }
+    30% 
+    {
+     transform: translate(120px,180px);    
+    }
+    40% 
+    {
+     transform: translate(-110px,140px);    
+    }
+    50% 
+    {
+        transform: translate(-40px,-10px);
+    }
+    60%
+    {        
+        transform: translate(-165px,110px);    
+    }
+    70%
+    {
+        transform: translate(-160px,0px);    
+    }
+    80%
+    {
+    transform: translate(-125px,-55px);
+    }
+    90%
+    {
+    transform: translate(-20px,100px);
+    }
+    100%
+    {
+    transform: translate(0px,0px);
+    }
+}
+#iconrso2
+{
+    animation: moovediscord 30s infinite ;
+}
+#iconrso2:hover
+{
+    transform: scale(1.2);
+    animation-play-state: paused;
+    background: teal;
+    border-radius: 50%;
+}
+@keyframes moovein
+{
+    0% 
+    {
+     transform: translate(-10px,20px);    
+    }
+    10% 
+    {
+     transform: translate(120px,-120px);    
+    }
+    20% 
+    {
+     transform: translate(120px,180px);    
+    }
+    30% 
+    {
+     transform: translate(-120px,140px);    
+    }
+    40% 
+    {
+     transform: translate(-110px,140px);    
+    }
+    50% 
+    {
+     transform: translate(-160px,0px);    
+    }
+    60%
+    {        
+    transform: translate(-165px,110px);    
+    }
+    70%
+    {
+    transform: translate(-40px,-10px);
+    }
+    80%
+    {
+    transform: translate(-125px,-55px);
+    }
+    90%
+    {
+    transform: translate(-20px,100px);
+    }
+    100%
+    {
+    transform: translate(-10px,20px);
+    }
+}
+#iconrso3
+{
+    animation: moovein 30s infinite ;
+}
+#iconrso3:hover
+{
+    transform: scale(1.2);
+    animation-play-state: paused;
+    background: teal;
+    border-radius: 50%;
+}
+@keyframes moovesnap
+{
+    0% 
+    {
+     transform: translate(0px,0px);    
+    }
+    10% 
+    {
+     transform: translate(120px,120px);    
+    }
+    20% 
+    {
+     transform: translate(120px,180px);    
+    }
+    30% 
+    {
+     transform: translate(-120px,140px);    
+    }
+    40% 
+    {
+     transform: translate(-110px,140px);    
+    }
+    50% 
+    {
+     transform: translate(80px,20px);    
+    }
+    60%
+    {        
+    transform: translate(-165px,110px);    
+    }
+    70%
+    {
+    transform: translate(-40px,-10px);
+    }
+    80%
+    {
+    transform: translate(-125px,-55px);
+    }
+    90%
+    {
+    transform: translate(-20px,100px);
+    }
+    100%
+    {
+    transform: translate(0px,0px);
+    }
+}
+#iconrso4
+{
+    animation: moovesnap 30s infinite ;
+}
+#iconrso4:hover
+{
+    transform: scale(1.2);
+    animation-play-state: paused;
+    background: teal;
+    border-radius: 50%;
 }
 @keyframes moovetwitter
 {
@@ -251,7 +473,7 @@ position: relative;
     }
     70%
     {
-    transform: translate(-40px,-130px);
+    transform: translate(-40px,-10px);
     }
     80%
     {
@@ -266,60 +488,25 @@ position: relative;
     transform: translate(0px,0px);
     }
 }
-#iconrso1
+#iconrso5
 {
-    animation: moovetwitter 15s infinite ;
+    animation: moovetwitter 30s infinite ;
 }
-@keyframes moovediscord
+#iconrso5:hover
 {
-    0% 
-    {
-     transform: translate(0px,0px);    
-    }
-    10% 
-    {
-     transform: translate(120px,120px);    
-    }
-    20% 
-    {
-     transform: translate(120px,180px);    
-    }
-    30% 
-    {
-     transform: translate(-120px,140px);    
-    }
-    40% 
-    {
-     transform: translate(-110px,140px);    
-    }
-    50% 
-    {
-     transform: translate(-160px,0px);    
-    }
-    60%
-    {        
-    transform: translate(-165px,110px);    
-    }
-    70%
-    {
-    transform: translate(-40px,-130px);
-    }
-    80%
-    {
-    transform: translate(-125px,-55px);
-    }
-    90%
-    {
-    transform: translate(-20px,100px);
-    }
-    100%
-    {
-    transform: translate(0px,0px);
-    }
+    transform: scale(1.2);
+    animation-play-state: paused;
+    background: teal;
+    border-radius: 50%;
 }
-#iconrso2
+#description
 {
-    animation: moovediscord infinite 5s ;
+   border: 2px solid black; 
+   height:500px;
+   width:300px;
+   margin-top: 130px;
+   margin-right: 30px;
+   margin-left:auto;
 }
 
 
