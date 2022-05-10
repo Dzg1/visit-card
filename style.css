@@ -11,11 +11,12 @@
 *
 {
      list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     text-decoration: none;
     --greeen: rgb(31, 224, 124);
     --bluue: rgb(57, 166, 218);
     --bluesoft: rgb(103, 222, 200);
+    --randomx: 10px;
 }
 
 body
@@ -213,47 +214,47 @@ left:30px;
 {
     0% 
     {
-     transform: translate(270px,400px);    
+     transform: translate(--randomx,400px);    
     }
     10% 
     {
-     transform: translate(120px,120px);    
+     transform: translate(--randomx,120px);    
     }
     20% 
     {
-     transform: translate(120px,180px);    
+     transform: translate(--randomx,180px);    
     }
     30% 
     {
-     transform: translate(-120px,140px);    
+     transform: translate(--randomx,140px);    
     }
     40% 
     {
-     transform: translate(-110px,140px);    
+     transform: translate(--randomx,140px);    
     }
     50% 
     {
-     transform: translate(-160px,0px);    
+     transform: translate(--randomx,0px);    
     }
     60%
     {        
-    transform: translate(-165px,110px);    
+    transform: translate(--randomx,110px);    
     }
     70%
     {
-    transform: translate(-40px,-10px);
+    transform: translate(--randomx,-10px);
     }
     80%
     {
-    transform: translate(-125px,-55px);
+    transform: translate(--randomx,-55px);
     }
     90%
     {
-    transform: translate(-20px,100px);
+    transform: translate(--randomx,100px);
     }
     100%
     {
-    transform: translate(0px,0px);
+    transform: translate(--randomx,0px);
     }
 }
 #iconrso1

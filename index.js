@@ -17,6 +17,8 @@ const randomy = Math.floor(Math.random() * 400);
 console.log(randomx);
 console.log(randomy);
 
+randomx.element.style.getPropertyValue("--randomx");
+
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
 });
