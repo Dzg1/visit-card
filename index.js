@@ -14,10 +14,10 @@ const spanh2 = document.getElementById("spanh2");
 const randomx = Math.floor(Math.random() * 270);
 const randomy = Math.floor(Math.random() * 400);
 
-console.log(randomx);
-console.log(randomy);
-
-randomx.element.style.getPropertyValue("--randomx");
+iconrso5.addEventListener("mouseover", () => {
+  iconrso5.style.transform.translate = "120px";
+  iconrso5.style.background = "blue";
+});
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
