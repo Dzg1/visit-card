@@ -22,7 +22,7 @@ const randomx4 = Math.floor(Math.random() * 270 + 30) + "px";
 const randomy5 = Math.floor(Math.random() * 330 + 220) + "px";
 const randomx5 = Math.floor(Math.random() * 270 + 30) + "px";
 
-reseaux.addEventListener("mouseover", () => {
+reseaux.addEventListener("mousemove", () => {
   iconrso1.style.top = Math.floor(Math.random() * 330 + 220) + "px";
   iconrso1.style.left = Math.floor(Math.random() * 270 + 30) + "px";
   iconrso2.style.top = Math.floor(Math.random() * 330 + 220) + "px";
@@ -34,9 +34,7 @@ reseaux.addEventListener("mouseover", () => {
   iconrso5.style.top = Math.floor(Math.random() * 330 + 220) + "px";
   iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
 });
-iconrso1.addEventListener("mouseover", () => {
-  pause;
-});
+iconrso1.addEventListener("mouseover", () => {});
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
