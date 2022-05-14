@@ -43,43 +43,54 @@ langues.addEventListener("mouseout", () => {
 logorso1.addEventListener("mouseover", () => {
   spanrso1.style.opacity = "1";
   spanh2.style.opacity = "0";
+  reseauxtitle.style.color = "black";
 });
 logorso1.addEventListener("mouseout", () => {
   spanrso1.style.opacity = "0";
   spanh2.style.opacity = "1";
+  reseauxtitle.style.color = "rgb(31, 224, 124)";
 });
 
 logorso2.addEventListener("mouseover", () => {
   spanrso2.style.opacity = "1";
   spanh2.style.opacity = "0";
+  reseauxtitle.style.color = "rgb(114,137,218)";
 });
 logorso2.addEventListener("mouseout", () => {
   spanrso2.style.opacity = "0";
   spanh2.style.opacity = "1";
+  reseauxtitle.style.color = "rgb(31, 224, 124)";
 });
 
 logorso3.addEventListener("mouseover", () => {
   spanrso3.style.opacity = "1";
   spanh2.style.opacity = "0";
+  reseauxtitle.style.color = "rgb(14,118,168)";
 });
 logorso3.addEventListener("mouseout", () => {
   spanrso3.style.opacity = "0";
   spanh2.style.opacity = "1";
+  reseauxtitle.style.color = "rgb(31, 224, 124)";
 });
 
 logorso4.addEventListener("mouseover", () => {
   spanrso4.style.opacity = "1";
-  spanh2.style.opacity = "0";
+  spanrso4.style.left = "60px";
+  reseauxtitle.style.opacity = "0";
+  reseauxtitle.style.color = "yellow";
 });
 logorso4.addEventListener("mouseout", () => {
   spanrso4.style.opacity = "0";
-  spanh2.style.opacity = "1";
+  reseauxtitle.style.opacity = "1";
+  reseauxtitle.style.color = "rgb(31, 224, 124)";
 });
 logorso5.addEventListener("mouseover", () => {
   spanrso5.style.opacity = "1";
   spanh2.style.opacity = "0";
+  reseauxtitle.style.color = "rgb(29,161,242)";
 });
 logorso5.addEventListener("mouseout", () => {
   spanrso5.style.opacity = "0";
   spanh2.style.opacity = "1";
+  reseauxtitle.style.color = "rgb(31, 224, 124)";
 });

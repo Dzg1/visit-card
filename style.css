@@ -6,7 +6,10 @@
     font-family: "sans";
     src: url(./objet/font/OpenSans-Regular.ttf);
 }
-
+@font-face {
+    font-family: "title";
+    src: url(./objet/font/KohSantepheap-Regular.ttf);
+}
 
 *
 {
@@ -172,11 +175,10 @@ display: flex;
     z-index: -2;
 }
 
-
 #reseauxtitle
 {
-font-family: "nermola";
-color : var(--greeen)
+ font-family: "title";
+color : var(--greeen);
 }
 #reseaux
 {
@@ -192,12 +194,30 @@ color : var(--greeen)
 {
    opacity:0 ; 
   position: absolute;
-  top: 158px;
-  left: 202px;
-  font-family: "nermola";
+  top: 150px;
+  left: 243px;
+  font-family: "title";
   color: var(--greeen);
-  font-weight: bold;
-  font-size: larger;
+font-weight: bold;
+font-size: 24px;
+}
+#spanrso1{
+    color: black;
+}
+#spanrso2 {
+    color:rgb(114,137,218);
+}
+#spanrso3 {
+    color: rgb(14,118,168);
+}
+#spanrso4 {
+    color: yellow;
+     background: rgb(7, 155, 155);
+     border-radius: 5px;
+     padding: 5px;
+}
+#spanrso5 {
+    color: rgb(29,161,242);
 }
 .iconrso
 {
@@ -217,31 +237,36 @@ z-index:0;
     animation-play-state: paused;
     background: black;
     z-index: 10;
+    transform: scale(1.6);
 }
 #iconrso2:hover
 {
     animation-play-state: paused;
     background: rgb(114,137,218);
+    transform: scale(1.6);
 }
 #iconrso3:hover
 {
     animation-play-state: paused;
     background: rgb(14,118,168) ;
+    transform: scale(1.6);
 }
 #iconrso4:hover
 {
     animation-play-state: paused;
     background: yellow;
+    transform: scale(1.6);
 }
 #iconrso5:hover
 {
     animation-play-state: paused;
     background: rgb(29,161,242);
+    transform: scale(1.6);
 }
 
 @keyframes movegit {
 0% {
-top: 230px;
+    top: 230px;
 left: 45px;
 }
 25% {
