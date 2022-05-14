@@ -11,32 +11,19 @@ const spanrso4 = document.getElementById("spanrso4");
 const logorso5 = document.getElementById("iconrso5");
 const spanrso5 = document.getElementById("spanrso5");
 const spanh2 = document.getElementById("spanh2");
-const randomy1 = Math.floor(Math.random() * 330 + 220) + "px";
-const randomx1 = Math.floor(Math.random() * 270 + 30) + "px";
-const randomy2 = Math.floor(Math.random() * 330 + 220) + "px";
-const randomx2 = Math.floor(Math.random() * 270 + 30) + "px";
-const randomy3 = Math.floor(Math.random() * 330 + 220) + "px";
-const randomx3 = Math.floor(Math.random() * 270 + 30) + "px";
-const randomy4 = Math.floor(Math.random() * 330 + 220) + "px";
-const randomx4 = Math.floor(Math.random() * 270 + 30) + "px";
-const randomy5 = Math.floor(Math.random() * 330 + 220) + "px";
-const randomx5 = Math.floor(Math.random() * 270 + 30) + "px";
-(() => {
-  iconrso1.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-  iconrso1.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-  iconrso2.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-  iconrso2.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-  iconrso3.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-  iconrso3.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-  iconrso4.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-  iconrso4.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-  iconrso5.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-  iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-})();
 
-reseaux.addEventListener("mouseover", () => {});
-
-iconrso1.addEventListener("mouseover", () => {});
+// var anirso = (() => {
+//   iconrso1.style.top = Math.floor(Math.random() * 330 + 220) + "px";
+//   iconrso1.style.left = Math.floor(Math.random() * 270 + 30) + "px";
+//   iconrso2.style.top = Math.floor(Math.random() * 330 + 220) + "px";
+//   iconrso2.style.left = Math.floor(Math.random() * 270 + 30) + "px";
+//   iconrso3.style.top = Math.floor(Math.random() * 330 + 220) + "px";
+//   iconrso3.style.left = Math.floor(Math.random() * 270 + 30) + "px";
+//   iconrso4.style.top = Math.floor(Math.random() * 330 + 220) + "px";
+//   iconrso4.style.left = Math.floor(Math.random() * 270 + 30) + "px";
+//   iconrso5.style.top = Math.floor(Math.random() * 330 + 220) + "px";
+//   iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
+// })();
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";

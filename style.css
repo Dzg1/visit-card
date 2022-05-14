@@ -180,7 +180,6 @@ color : var(--greeen)
 }
 #reseaux
 {
-    border: solid 2px var(--bluue);
     text-align: center;
     height: 500px;
     width: 300px;
@@ -204,11 +203,177 @@ color : var(--greeen)
 {
 width: 50px;
 height: 50px;
+padding: 5px;
 transition: 1s;
 cursor: url(./objet/cursor/crosshair.png), auto;
 top:220px;
 left:30px;
 position: absolute;
+border-radius: 50%;
+z-index:0;
+}
+#iconrso1:hover
+{
+    animation-play-state: paused;
+    background: black;
+    z-index: 10;
+}
+#iconrso2:hover
+{
+    animation-play-state: paused;
+    background: rgb(114,137,218);
+}
+#iconrso3:hover
+{
+    animation-play-state: paused;
+    background: rgb(14,118,168) ;
+}
+#iconrso4:hover
+{
+    animation-play-state: paused;
+    background: yellow;
+}
+#iconrso5:hover
+{
+    animation-play-state: paused;
+    background: rgb(29,161,242);
+}
+
+@keyframes movegit {
+0% {
+top: 230px;
+left: 45px;
+}
+25% {
+    top: 380px;
+    left: 180px;
+}
+50% {
+top: 450px;
+left: 280px;
+}
+75% {
+top: 510px;
+left:30px;
+}
+100% {
+top: 230px;
+left: 45px;
+}
+}
+
+#iconrso1 
+{
+    animation: movegit  15s linear infinite;
+}
+
+@keyframes movediscord {
+0% {
+top: 530px;
+left: 45px;
+}
+25%{
+top:550px;
+left:320px;
+}
+50% {
+top: 350px;
+left: 280px;
+}
+75% {
+top: 245px;
+left: 75px;
+}
+100% {
+top: 530px;
+left: 45px;
+}
+}
+
+#iconrso2 
+{
+    animation: movediscord  15s linear infinite;
+}
+@keyframes movelinkedin {
+0% {
+top: 280px;
+left: 310px;
+}
+25% {
+top: 240px;
+left: 60px;
+}
+50% {
+top: 550px;
+left: 30px;
+}
+75% {
+    top:350px;
+    left: 150px;
+}
+100% {
+top: 280px;
+left: 310px;
+}
+}
+
+#iconrso3 
+{
+    animation: movelinkedin  15s linear infinite;
+}
+@keyframes movesnap {
+0% {
+top: 480px;
+left: 280px;
+}
+25% {
+top: 290px;
+left: 315px
+}
+50% {
+top: 300px;
+left: 80px;
+}
+75% {
+top: 540px;
+left: 150px;
+}
+100% {
+top: 480px;
+left: 280px;
+}
+}
+
+#iconrso4
+{
+    animation: movesnap  15s linear infinite;
+}
+@keyframes movetwitter {
+0% {
+top: 380px;
+left: 180px;
+}
+25% {
+ top: 470px;
+ left: 30px;   
+}
+50% {
+top: 500px;
+left:190px;
+}
+75%{
+top: 230px;
+left: 315px;    
+}
+100% {
+top: 380px;
+left: 180px;
+}
+}
+
+#iconrso5
+{
+    animation: movetwitter  15s linear infinite;
 }
 
 
