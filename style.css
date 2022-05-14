@@ -212,9 +212,9 @@ font-size: 24px;
 }
 #spanrso4 {
     color: yellow;
-     background: rgb(7, 155, 155);
+     background: var(--bluue);
      border-radius: 5px;
-     padding: 5px;
+     
 }
 #spanrso5 {
     color: rgb(29,161,242);
@@ -402,6 +402,27 @@ left: 180px;
 }
 
 
+  @keyframes shooted{
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateX(100deg);
+              transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+  }
+  #shooted {
+	-webkit-animation: shooted 0.45s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: shooted 0.45s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
 #description
 {
    border: 2px solid black; 
@@ -418,7 +439,7 @@ left: 180px;
 {
     text-align: center;
     padding-top: 20px;
-    font-family: "nermola";
+    font-family: "title";
     font-size: 2rem;
     color: whitesmoke;
 }
@@ -444,7 +465,7 @@ left: 180px;
 {
     margin: 0;
     padding-top: 20px;
-    font-family: "nermola";
+    font-family: "title";
     text-align: center;
 }
 
@@ -457,6 +478,6 @@ left: 180px;
 }
 #contacttitle
 {
-    font-family: "nermola";
+    font-family: "title";
     text-align: center;
 }

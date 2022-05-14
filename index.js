@@ -11,7 +11,8 @@ const spanrso4 = document.getElementById("spanrso4");
 const logorso5 = document.getElementById("iconrso5");
 const spanrso5 = document.getElementById("spanrso5");
 const spanh2 = document.getElementById("spanh2");
-
+const animation = document.getElementById("shooted");
+const logorso = document.getElementById("logorso");
 // var anirso = (() => {
 //   iconrso1.style.top = Math.floor(Math.random() * 330 + 220) + "px";
 //   iconrso1.style.left = Math.floor(Math.random() * 270 + 30) + "px";
@@ -24,6 +25,10 @@ const spanh2 = document.getElementById("spanh2");
 //   iconrso5.style.top = Math.floor(Math.random() * 330 + 220) + "px";
 //   iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
 // })();
+
+logorso.addEventListener("click", () => {
+  logorso.style.background = "red";
+});
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
