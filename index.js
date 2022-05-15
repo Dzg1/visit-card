@@ -26,10 +26,6 @@ const logorso = document.getElementById("logorso");
 //   iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
 // })();
 
-logorso.addEventListener("click", () => {
-  logorso.style.background = "red";
-});
-
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
 });
