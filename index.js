@@ -76,7 +76,6 @@ logorso3.addEventListener("mouseout", () => {
 
 logorso4.addEventListener("mouseover", () => {
   spanrso4.style.opacity = "1";
-  spanrso4.style.left = "60px";
   reseauxtitle.style.opacity = "0";
   reseauxtitle.style.color = "yellow";
 });
