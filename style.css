@@ -119,12 +119,14 @@ text-decoration: underline ;
    border-radius: 555px;
    line-height: 35px;
    border: 2px solid var(--bluue);
+   transition:0.5s;
    
 
 }
 .main:hover
 {
-    transform: scale(1.2);
+    border-radius: 5px;
+    transform: scale(1.3);
 }
 .main a 
 {
@@ -253,7 +255,7 @@ text-transform: uppercase;
 }
 #spanrso4 {
     color: yellow;
-     background: var(--bluue);
+    -webkit-text-stroke: black;
      border-radius: 5px;
      
 }
