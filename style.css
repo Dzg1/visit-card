@@ -217,23 +217,24 @@ nav {
 
 #spanh2 {
     font-family: "title";
-    color: var(--greeen);
+    color: black;
     text-transform: uppercase;
+
 }
 
 #reseaux {
     text-align: center;
     height: 500px;
     width: 300px;
-    margin-top: 130px;
-    margin-left: 30px;
+    margin-top: 160px;
+    margin-left: 100px;
     cursor: url(./objet/cursor/crosshair.png), auto;
 }
 
 .spanrso {
     opacity: 0;
     position: absolute;
-    top: 150px;
+    top: 190px;
     left: 60px;
     font-family: "title";
     color: var(--greeen);
@@ -312,7 +313,7 @@ nav {
 @keyframes movegit {
     0% {
         top: 230px;
-        left: 45px;
+        left: 500px;
     }
 
     25% {
@@ -322,7 +323,7 @@ nav {
 
     50% {
         top: 450px;
-        left: 280px;
+        left: 380px;
     }
 
     75% {
@@ -332,7 +333,7 @@ nav {
 
     100% {
         top: 230px;
-        left: 45px;
+        left: 500px;
     }
 }
 
@@ -348,7 +349,7 @@ nav {
 
     25% {
         top: 550px;
-        left: 320px;
+        left: 500px;
     }
 
     50% {
@@ -374,7 +375,7 @@ nav {
 @keyframes movelinkedin {
     0% {
         top: 280px;
-        left: 310px;
+        left: 480px;
     }
 
     25% {
@@ -394,7 +395,7 @@ nav {
 
     100% {
         top: 280px;
-        left: 310px;
+        left: 480px;
     }
 }
 
@@ -410,7 +411,7 @@ nav {
 
     25% {
         top: 290px;
-        left: 315px
+        left: 415px
     }
 
     50% {
@@ -451,7 +452,7 @@ nav {
 
     75% {
         top: 230px;
-        left: 315px;
+        left: 415px;
     }
 
     100% {
@@ -477,7 +478,7 @@ nav {
 
 #descriptiontitle {
     font-family: "title";
-    color: var(--bluue);
+    color: black;
 
 }
 
@@ -508,10 +509,7 @@ clip-path: ellipse(111% 100% at 75.62% 100%);
    
 
 }
-#curvepresentation {
-    width: 100%;
-    height:60px;
-}
+
 .card {
     background: white;
     text-align: center;
