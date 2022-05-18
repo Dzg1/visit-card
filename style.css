@@ -255,7 +255,7 @@ text-transform: uppercase;
 }
 #spanrso4 {
     color: yellow;
-    -webkit-text-stroke: black;
+   -webkit-text-stroke: 0.5px teal;
      border-radius: 5px;
      
 }
