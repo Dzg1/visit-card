@@ -201,15 +201,14 @@ nav {
 
 
 #title {
-    border:3px solid black;
-background: url(./objet/backfr.gif) fixed no-repeat content-box;
-background: contain;
-    margin-top:100px;
-    width:100%;
+    background: url(./objet/backfr.gif) fixed no-repeat content-box center;
+
+    margin-top: 100px;
+    width: 100%;
     height: auto;
     position: relative;
     display: flex;
-   
+
 }
 
 #logotitle {
@@ -509,21 +508,22 @@ background: contain;
 #presentation {
 
     background: linear-gradient(313deg, var(--bluesoft) 0%, var(--bluue) 50%, teal 85%);
-padding-top: 40px;
-clip-path: ellipse(111% 100% at 75.62% 100%);
+    padding-top: 40px;
+    clip-path: ellipse(111% 100% at 75.62% 100%);
     text-align: center;
     padding-bottom: 60px;
-   
 
 }
-#curvecard{
-    height:200px;
-    width:100%;
+
+#curvecard {
+    height: 200px;
+    width: 100%;
     background: white;
     clip-path: ellipse(111% 100% at 75.62% 100%);
-    position:absolute;
+    position: absolute;
 
 }
+
 .card {
     background: white;
     text-align: center;
@@ -549,21 +549,22 @@ clip-path: ellipse(111% 100% at 75.62% 100%);
     background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
-    
-    
+
+
 
 }
+
 #curvecontact {
     background: var(--bluesoft);
     height: 300px;
-    width:100%;
-    position:absolute;
+    width: 100%;
+    position: absolute;
     clip-path: ellipse(72% 100% at 72% 100%);
-                bottom:-250px;
+    bottom: -250px;
 }
 
 #contacttitle {
     font-family: "title";
     text-align: center;
- 
+
 }
