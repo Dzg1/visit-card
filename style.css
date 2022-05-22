@@ -117,13 +117,13 @@ nav {
     border-radius: 555px;
     line-height: 35px;
     border: 2px solid var(--bluue);
-    transition: 0.5s;
-
+    
+    transition: 0.1s;
 
 }
 
 .main:hover {
-    border-radius: 5px;
+    border-radius: 20px;
     transform: scale(1.3);
 }
 
