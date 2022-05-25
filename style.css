@@ -555,8 +555,7 @@ nav {
     background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
-
-
+text-align: center;
 
 }
 
@@ -572,6 +571,15 @@ nav {
 #contacttitle {
     font-family: "title";
     letter-spacing: 3px;
-    text-align: center;
+ 
 
+}
+ 
+.contact{
+    display:block;
+    width: 50%;
+    margin-left: 50% ;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background: var(--bluesoft);
 }
