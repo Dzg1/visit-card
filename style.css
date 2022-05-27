@@ -551,7 +551,7 @@ nav {
 
 #contact {
     padding-top: 20px;
-    height: 400px;
+    height: 600px;
     background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
@@ -585,7 +585,6 @@ text-align: center;
     border: 1px solid var(--bluue);
     padding: 5px;
     margin-top:10px;
+
 }
-.contact :hover{
-    transform: scale(1.1);
-}
+
