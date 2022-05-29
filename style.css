@@ -608,7 +608,7 @@ nav {
     }
 
     25% {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     50% {
@@ -616,7 +616,7 @@ nav {
     }
 
     75% {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     100% {
@@ -626,5 +626,5 @@ nav {
 }
 
 #sub:hover {
-    animation: 5s linear;
+    animation: send 1.5s linear infinite;
 }
