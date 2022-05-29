@@ -214,12 +214,12 @@ nav {
 
 #logotitle {
     position: fixed;
-    top: 60px;
+    top: 152px;
     left: 50%;
-    transform: translate(-50%);
     width: 500px;
     height: auto;
     z-index: -2;
+    transform: scale(1.2) translate(-50%);
 }
 
 #spanh2 {
