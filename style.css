@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "sans";
-    src: url(./objet/font/OpenSans-Regular.ttf);
+    src: url(./objet/font/Poppins-ExtraLight.ttf);
 }
 
 @font-face {
     font-family: "title";
-    src: url(./objet/font/Moon2.0-Regular.otf);
+    src: url(./objet/font/Poppins-Medium.ttf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap");
@@ -117,7 +117,7 @@ nav {
     border-radius: 555px;
     line-height: 35px;
     border: 2px solid var(--bluue);
-    
+
     transition: 0.1s;
 
 }
@@ -208,7 +208,7 @@ nav {
     height: 600px;
     position: relative;
     display: flex;
-    z-index:0;
+    z-index: 0;
 
 }
 
@@ -224,7 +224,6 @@ nav {
 
 #spanh2 {
     font-family: "title";
-    letter-spacing: 3px;
     color: black;
     text-transform: uppercase;
 
@@ -245,7 +244,6 @@ nav {
     top: 90px;
     left: 60px;
     font-family: "title";
-    letter-spacing: 3px;
     color: var(--greeen);
     font-weight: bold;
     font-size: 24px;
@@ -487,7 +485,6 @@ nav {
 
 #descriptiontitle {
     font-family: "title";
-    letter-spacing: 3px;
     color: black;
 
 }
@@ -505,7 +502,6 @@ nav {
     text-align: center;
     padding-top: 20px;
     font-family: "title";
-    letter-spacing: 3px;
     font-size: 2rem;
     color: whitesmoke;
 }
@@ -543,7 +539,6 @@ nav {
     margin: 0;
     padding-top: 20px;
     font-family: "title";
-    letter-spacing: 3px;
     text-align: center;
 }
 
@@ -555,7 +550,7 @@ nav {
     background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
-text-align: center;
+    text-align: center;
 
 }
 
@@ -570,35 +565,66 @@ text-align: center;
 
 #contacttitle {
     font-family: "title";
-    letter-spacing: 3px;
- 
+
 
 }
- 
-.contact{
-    display:block;
+
+.contact {
+    display: block;
     width: 50%;
-    margin-left: 50% ;
+    margin-left: 50%;
     transform: translate(-50%);
     border-radius: 5px;
     background: var(--bluesoft);
     border: 1px solid var(--bluue);
     padding: 5px;
-    margin-top:10px;
+    margin-top: 10px;
+    font-family: "sans";
 }
-#like{
+
+#like {
     margin-top: 20px;
+    font-family: "sans";
 }
-#sub{
-    height:100px;
-    width:100px;
+
+#sub {
+    height: 100px;
+    width: 100px;
     display: block;
-    margin-left: 50% ;
+    margin-left: 50%;
     transform: translate(-50%);
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-background: teal;
-box-shadow: 5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148);
-margin-top: 20px;
-cursor:pointer;
+    background: teal;
+    box-shadow: 5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148);
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@keyframes send {
+    0% {
+        font-size: 40px;
+    }
+
+    25% {
+        font-size: 50px;
+    }
+
+    50% {
+        font-size: 40px;
+    }
+
+    75% {
+        font-size: 30px;
+    }
+
+    100% {
+        font-size: 40px;
+
+    }
+}
+
+#sub:hover {
+    animation: 5s linear;
 }
