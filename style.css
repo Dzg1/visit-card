@@ -174,13 +174,13 @@ nav ::selection {
     width: 100%;
     height: 30px;
     background: linear-gradient(313deg, teal 0%, rgb(57, 166, 218) 28%, rgb(103, 222, 200) 53%, rgb(31, 224, 124) 100%);
-    margin-top: -30px;
+    margin-top: -23px;
     position: absolute;
     overflow: hidden;
     border-bottom: solid 1px;
     border-bottom-color: var(--bluesoft);
     padding: center;
-    padding-top: 4px;
+    padding-top: 6px;
     color: teal;
     font-family: "sans";
     font-size: 13px;
@@ -193,7 +193,7 @@ nav ::selection {
 #bandeau div {
     display: inline-block;
     position: absolute;
-    width: 200%;
+    width: 220%;
     height: 30px;
     animation: marquee 30s linear infinite;
 }
@@ -224,7 +224,7 @@ nav ::selection {
 
 #logotitle {
     position: fixed;
-    top: 152px;
+    top: 160px;
     left: 50%;
     width: 500px;
     height: auto;
@@ -511,22 +511,24 @@ nav ::selection {
 
 #presentationtitle {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
     font-family: "title";
     font-size: 2rem;
     color: whitesmoke;
+    margin: 0;
 }
 
-#presentation {
+#thepresentation {
 
     background: linear-gradient(313deg, var(--bluesoft) 0%, var(--bluue) 50%, teal 85%);
     padding-top: 40px;
     clip-path: ellipse(111% 100% at 75.62% 100%);
     text-align: center;
     padding-bottom: 60px;
+
 }
 
-#presentation ::selection {
+#thepresentation ::selection {
     color: #fff;
     background: var(--bluesoft);
 }
@@ -540,12 +542,19 @@ nav ::selection {
 
 }
 
+#presentation {
+    font-family: "sans";
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
 .card {
     background: white;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 400px;
+    height: 600px;
     position: relative;
 
 }
@@ -555,11 +564,37 @@ nav ::selection {
     background: var(--bluesoft);
 }
 
-#cardtitle {
+#thecardtitle {
     margin: 0;
     padding-top: 20px;
     font-family: "title";
     text-align: center;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.c123 {
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    border: 2px solid teal;
+    box-shadow: 3px 3px 7px rgb(0, 108, 108);
+    margin-top: 80px;
+    border-radius: 10px;
+
+
+}
+
+#c2 {
+    transform: translateY(-30px);
+}
+
+#cardtitle {
+    font-family: "title";
+    font-size: larger;
 }
 
 /*******************/
