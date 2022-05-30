@@ -46,6 +46,11 @@ nav {
     z-index: 1;
 }
 
+nav ::selection {
+    color: #fff;
+    background: var(--bluue);
+}
+
 .nav-list {
     padding: 7px 0;
     display: flex;
@@ -61,7 +66,7 @@ nav {
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 3px;
-    color: var(--greeen);
+    color: var(--bluue);
     font-family: "sans";
 }
 
@@ -179,7 +184,10 @@ nav {
     color: teal;
     font-family: "sans";
     font-size: 13px;
+}
 
+#bandeau ::selection {
+    background: white;
 }
 
 #bandeau div {
@@ -188,8 +196,6 @@ nav {
     width: 200%;
     height: 30px;
     animation: marquee 30s linear infinite;
-
-
 }
 
 #bandeau span {
@@ -209,7 +215,11 @@ nav {
     position: relative;
     display: flex;
     z-index: 0;
+}
 
+#title ::selection {
+    color: #fff;
+    background: var(--bluue);
 }
 
 #logotitle {
@@ -495,6 +505,7 @@ nav {
     line-height: 44px;
 }
 
+
 /****************/
 
 
@@ -513,7 +524,11 @@ nav {
     clip-path: ellipse(111% 100% at 75.62% 100%);
     text-align: center;
     padding-bottom: 60px;
+}
 
+#presentation ::selection {
+    color: #fff;
+    background: var(--bluesoft);
 }
 
 #curvecard {
@@ -535,6 +550,11 @@ nav {
 
 }
 
+.card ::selection {
+    color: #fff;
+    background: var(--bluesoft);
+}
+
 #cardtitle {
     margin: 0;
     padding-top: 20px;
@@ -551,7 +571,11 @@ nav {
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
     text-align: center;
+}
 
+#contact ::selection {
+    color: #fff;
+    background: var(--bluue);
 }
 
 #curvecontact {
