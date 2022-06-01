@@ -196,7 +196,6 @@ nav ::selection {
     width: 220%;
     height: 30px;
     animation: marquee 30s linear infinite;
-    box-shadow: 10px 10px 10px black;
 }
 
 #bandeau span {
