@@ -560,7 +560,7 @@ nav ::selection {
 }
 
 .card ::selection {
-    color: #fff;
+    color: rgb(255, 255, 255);
     background: var(--bluesoft);
 }
 
@@ -580,8 +580,8 @@ nav ::selection {
     text-align: center;
     height: 300px;
     width: 200px;
-    border: 2px solid teal;
-    box-shadow: 3px 3px 7px rgb(0, 108, 108);
+    background: rgb(rgb(255, 255, 255));
+    box-shadow: 5px 5px 10px rgb(rgb(235, 235, 235)), -5px -5px 10px rgb(rgb(275, 275, 275));
     margin-top: 80px;
     border-radius: 10px;
 
