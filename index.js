@@ -13,18 +13,9 @@ const spanrso5 = document.getElementById("spanrso5");
 const spanh2 = document.getElementById("spanh2");
 const animation = document.getElementById("shooted");
 const logorso = document.getElementById("logorso");
-// var anirso = (() => {
-//   iconrso1.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-//   iconrso1.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-//   iconrso2.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-//   iconrso2.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-//   iconrso3.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-//   iconrso3.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-//   iconrso4.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-//   iconrso4.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-//   iconrso5.style.top = Math.floor(Math.random() * 330 + 220) + "px";
-//   iconrso5.style.left = Math.floor(Math.random() * 270 + 30) + "px";
-// })();
+const card1 = document.getElementById("c1");
+const card2 = document.getElementById("c2");
+const card3 = document.getElementById("c3");
 
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
@@ -93,4 +84,33 @@ logorso5.addEventListener("mouseout", () => {
   spanrso5.style.opacity = "0";
   spanh2.style.opacity = "1";
   reseauxtitle.style.color = "rgb(31, 224, 124)";
+});
+
+/************card***************/
+
+let c1Clicked = false;
+let c2Clicked = false;
+let c3Clicked = false;
+
+card1.addEventListener("click", () => {
+  c1Clicked = !c1Clicked;
+  c1Clicked
+    ? card1.classList.add("c1clicked")
+    : card1.classList.remove("c1clicked");
+  console.log(c1Clicked);
+});
+
+card2.addEventListener("click", () => {
+  c2Clicked = !c2Clicked;
+  c2Clicked
+    ? card2.classList.add("c2clicked")
+    : card2.classList.remove("c2clicked");
+  console.log(c2Clicked);
+});
+
+card3.addEventListener("click", () => {
+  c3Clicked = !c3Clicked;
+  c3Clicked
+    ? card3.classList.add("c3clicked")
+    : card3.classList.remove("c3clicked");
 });
