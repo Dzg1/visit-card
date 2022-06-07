@@ -113,4 +113,5 @@ card3.addEventListener("click", () => {
   c3Clicked
     ? card3.classList.add("c3clicked")
     : card3.classList.remove("c3clicked");
+  console.log(c3Clicked);
 });
