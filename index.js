@@ -120,31 +120,33 @@ card3.addEventListener("click", () => {
 const oui = document.getElementById("oui");
 const non = document.getElementById("non");
 
-let like = false;
-let unlike = false;
+let likeclicked = false;
 
 oui.addEventListener("click", () => {
-  like = !like;
-  like ? oui.classList.add("likeclicked") : oui.classList.remove("likeclicked");
-  if ((like = unlike)) {
-    unlike = !unlike;
-  }
-  unlike
-    ? non.classList.add("likeclicked")
-    : non.classList.remove("likeclicked");
-  console.log(like);
-  console.log(unlike);
+  likeclicked = !likeclicked;
+  likeclicked
+    ? oui.classList.add("likeclicked")
+    : oui.classList.remove("likeclicked");
 });
 
 non.addEventListener("click", () => {
-  unlike = !unlike;
-  unlike
+  likeclicked = !likeclicked;
+  likeclicked
     ? non.classList.add("likeclicked")
     : non.classList.remove("likeclicked");
-  if ((unlike = like)) {
-    like = !unlike;
-  }
-  like ? oui.classList.add("likeclicked") : oui.classList.remove("likeclicked");
-  console.log("like = ", like);
-  console.log("unlike est ", unlike);
+});
+
+let liked = false;
+let unliked = false;
+
+oui.addEventListener("click", () => {
+  likeclicked
+    ? non.classList.remove("likeclicked")
+    : non.classList.add("likeclicked");
+});
+
+non.addEventListener("click", () => {
+  likeclicked
+    ? oui.classList.remove("likeclicked")
+    : oui.classList.add("likeclicked");
 });

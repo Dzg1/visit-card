@@ -753,6 +753,10 @@ nav ::selection {
     background: linear-gradient(145deg, #008989, #007373);
 }
 
+#sele {
+    user-select: none;
+}
+
 .likeclicked {
     background: blue;
 }
