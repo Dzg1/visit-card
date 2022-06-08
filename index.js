@@ -115,3 +115,36 @@ card3.addEventListener("click", () => {
     : card3.classList.remove("c3clicked");
   console.log(c3Clicked);
 });
+
+/******like********/
+const oui = document.getElementById("oui");
+const non = document.getElementById("non");
+
+let like = false;
+let unlike = false;
+
+oui.addEventListener("click", () => {
+  like = !like;
+  like ? oui.classList.add("likeclicked") : oui.classList.remove("likeclicked");
+  if ((like = unlike)) {
+    unlike = !unlike;
+  }
+  unlike
+    ? non.classList.add("likeclicked")
+    : non.classList.remove("likeclicked");
+  console.log(like);
+  console.log(unlike);
+});
+
+non.addEventListener("click", () => {
+  unlike = !unlike;
+  unlike
+    ? non.classList.add("likeclicked")
+    : non.classList.remove("likeclicked");
+  if ((unlike = like)) {
+    like = !unlike;
+  }
+  like ? oui.classList.add("likeclicked") : oui.classList.remove("likeclicked");
+  console.log("like = ", like);
+  console.log("unlike est ", unlike);
+});

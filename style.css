@@ -668,7 +668,7 @@ nav ::selection {
 
 #contact {
     padding-top: 20px;
-    height: 600px;
+    height: 700px;
     background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
@@ -700,12 +700,11 @@ nav ::selection {
 #contacttitle {
     font-family: "title";
     font-weight: 500;
-
-
+    margin-top: 100px
 }
 
 .contact {
-    display: block;
+    display: grid;
     width: 50%;
     margin-left: 50%;
     transform: translate(-50%);
@@ -720,6 +719,9 @@ nav ::selection {
 #like {
     margin-top: 20px;
     font-family: "sans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sub {
@@ -737,17 +739,24 @@ nav ::selection {
     font-size: 40px;
 }
 
-.radiolike {
-    display: none;
-}
 
-.labellike {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
+.divlike {
+
+    height: 35px;
+    width: 35px;
     border-radius: 50px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148);
+    background: linear-gradient(145deg, #008989, #007373);
 }
+
+.likeclicked {
+    background: blue;
+}
+
 
 @keyframes send {
     0% {
