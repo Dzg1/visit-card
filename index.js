@@ -117,36 +117,14 @@ card3.addEventListener("click", () => {
 });
 
 /******like********/
-const oui = document.getElementById("oui");
-const non = document.getElementById("non");
+const oui = document.getElementById("labeloui");
+const non = document.getElementById("labelnon");
 
-let likeclicked = false;
-
-oui.addEventListener("click", () => {
-  likeclicked = !likeclicked;
-  likeclicked
-    ? oui.classList.add("likeclicked")
-    : oui.classList.remove("likeclicked");
-});
-
-non.addEventListener("click", () => {
-  likeclicked = !likeclicked;
-  likeclicked
-    ? non.classList.add("likeclicked")
-    : non.classList.remove("likeclicked");
-});
-
-let liked = false;
-let unliked = false;
-
-oui.addEventListener("click", () => {
-  likeclicked
-    ? non.classList.remove("likeclicked")
-    : non.classList.add("likeclicked");
-});
-
-non.addEventListener("click", () => {
-  likeclicked
-    ? oui.classList.remove("likeclicked")
-    : oui.classList.add("likeclicked");
-});
+function check() {
+  oui.checked = true;
+}
+function uncheck() {
+  non.checked = false;
+}
+console.log(check);
+console.log(uncheck);

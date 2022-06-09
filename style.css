@@ -741,6 +741,11 @@ nav ::selection {
 
 
 .divlike {
+    display: none;
+}
+
+.labellike {
+    user-select: none;
 
     height: 35px;
     width: 35px;
@@ -753,8 +758,8 @@ nav ::selection {
     background: linear-gradient(145deg, #008989, #007373);
 }
 
-#sele {
-    user-select: none;
+.labellike:checked {
+    background: blue !important;
 }
 
 .likeclicked {
