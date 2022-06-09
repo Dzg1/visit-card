@@ -120,11 +120,5 @@ card3.addEventListener("click", () => {
 const oui = document.getElementById("labeloui");
 const non = document.getElementById("labelnon");
 
-function check() {
-  oui.checked = true;
-}
-function uncheck() {
-  non.checked = false;
-}
 console.log(check);
 console.log(uncheck);

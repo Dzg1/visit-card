@@ -613,7 +613,8 @@ nav ::selection {
 
 .c1clicked {
     background: rgb(242, 242, 242) !important;
-    box-shadow: inset -19px 19px 42px rgb(189, 189, 189), inset 19px -19px 42px rgb(255, 255, 255) !important;
+    box-shadow: inset -19px 19px 42px rgb(189, 189, 189), inset 19px -19px 42px rgb(255, 255, 255), -10px 10px 20px rgb(198, 198, 198),
+        10px -10px 20px rgb(255, 255, 255) !important;
 }
 
 #c2 {
@@ -630,7 +631,8 @@ nav ::selection {
 
 .c2clicked {
     background: rgb(242, 242, 242) !important;
-    box-shadow: inset 0px 19px 42px rgb(189, 189, 189), inset 0px -19px 42px rgb(255, 255, 255) !important;
+    box-shadow: inset 0px 19px 42px rgb(189, 189, 189), inset 0px -19px 42px rgb(255, 255, 255), 0px 10px 20px rgb(198, 198, 198),
+        0px -10px 20px rgb(255, 255, 255) !important;
 }
 
 #c3 {
@@ -647,7 +649,8 @@ nav ::selection {
 
 .c3clicked {
     background: rgb(242, 242, 242) !important;
-    box-shadow: inset 19px 19px 42px rgb(189, 189, 189), inset -19px -19px 42px rgb(255, 255, 255) !important;
+    box-shadow: inset 19px 19px 42px rgb(189, 189, 189), inset -19px -19px 42px rgb(255, 255, 255), 10px 10px 20px rgb(198, 198, 198),
+        -10px -10px 20px rgb(255, 255, 255) !important;
 }
 
 .pc {
@@ -758,38 +761,44 @@ nav ::selection {
     background: linear-gradient(145deg, #008989, #007373);
 }
 
-.labellike:checked {
-    background: blue !important;
+#oui:checked~#labeloui {
+    background: #008080;
+    box-shadow: inset 5px 5px 10px #005454,
+        inset -5px -5px 10px #00acac, 5px 5px 10px #005454,
+        -5px -5px 10px #00acac;
 }
 
-.likeclicked {
-    background: blue;
-}
+#non:checked~#labelnon {
+    background: #008080;
+    box-shadow: inset 5px 5px 10px #005454,
+        inset -5px -5px 10px #00acac, 5px 5px 10px #005454,
+        -5px -5px 10px #00acac;
 
 
-@keyframes send {
-    0% {
-        font-size: 40px;
+
+    @keyframes send {
+        0% {
+            font-size: 40px;
+        }
+
+        25% {
+            font-size: 45px;
+        }
+
+        50% {
+            font-size: 40px;
+        }
+
+        75% {
+            font-size: 35px;
+        }
+
+        100% {
+            font-size: 40px;
+
+        }
     }
 
-    25% {
-        font-size: 45px;
+    #sub:hover {
+        animation: send 1.5s linear infinite;
     }
-
-    50% {
-        font-size: 40px;
-    }
-
-    75% {
-        font-size: 35px;
-    }
-
-    100% {
-        font-size: 40px;
-
-    }
-}
-
-#sub:hover {
-    animation: send 1.5s linear infinite;
-}
