@@ -588,8 +588,8 @@ nav ::selection {
 
 .c123 {
     text-align: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     margin-top: 80px;
     border-radius: 200px;
     padding-top: 35px;
@@ -744,7 +744,9 @@ nav ::selection {
 
 
 .divlike {
-    display: none;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
 }
 
 .labellike {
@@ -759,6 +761,7 @@ nav ::selection {
     margin: 10px;
     box-shadow: 5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148);
     background: linear-gradient(145deg, #008989, #007373);
+    cursor: pointer;
 }
 
 #oui:checked~#labeloui {
@@ -773,32 +776,33 @@ nav ::selection {
     box-shadow: inset 5px 5px 10px #005454,
         inset -5px -5px 10px #00acac, 5px 5px 10px #005454,
         -5px -5px 10px #00acac;
+}
 
 
 
-    @keyframes send {
-        0% {
-            font-size: 40px;
-        }
-
-        25% {
-            font-size: 45px;
-        }
-
-        50% {
-            font-size: 40px;
-        }
-
-        75% {
-            font-size: 35px;
-        }
-
-        100% {
-            font-size: 40px;
-
-        }
+@keyframes send {
+    0% {
+        font-size: 40px;
     }
 
-    #sub:hover {
-        animation: send 1.5s linear infinite;
+    25% {
+        font-size: 45px;
     }
+
+    50% {
+        font-size: 40px;
+    }
+
+    75% {
+        font-size: 35px;
+    }
+
+    100% {
+        font-size: 40px;
+
+    }
+}
+
+#sub:hover {
+    animation: send 1.5s linear infinite;
+}
