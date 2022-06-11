@@ -19,7 +19,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    --greeen: rgb(31, 224, 124);
+    --greeen: #1fe07c;
     --bluue: rgb(57, 166, 218);
     --bluesoft: rgb(103, 222, 200);
     --randomx: 10px;
@@ -563,7 +563,7 @@ nav ::selection {
     padding: 0;
     height: 550px;
     position: relative;
-    transition: 3s;
+
 
 }
 
@@ -583,7 +583,6 @@ nav ::selection {
 #cards {
     display: flex;
     justify-content: space-around;
-    transition: 3s;
 }
 
 .c123 {
@@ -592,7 +591,8 @@ nav ::selection {
     width: 300px;
     margin-top: 80px;
     border-radius: 200px;
-    padding-top: 35px;
+    padding-top: 50px;
+    cursor: pointer;
 }
 
 
@@ -672,7 +672,7 @@ nav ::selection {
 #contact {
     padding-top: 20px;
     height: 700px;
-    background: teal;
+    background: #008080;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
     text-align: center;
@@ -752,8 +752,8 @@ nav ::selection {
 .labellike {
     user-select: none;
 
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -771,6 +771,22 @@ nav ::selection {
         -5px -5px 10px #00acac;
 }
 
+#oui:checked~#labeloui::before {
+    opacity: 0;
+}
+
+#oui:checked~#labeloui::after {
+    opacity: 1;
+}
+
+#non:checked~#labelnon::before {
+    opacity: 0;
+}
+
+#non:checked~#labelnon::after {
+    opacity: 1;
+}
+
 #non:checked~#labelnon {
     background: #008080;
     box-shadow: inset 5px 5px 10px #005454,
@@ -778,7 +794,78 @@ nav ::selection {
         -5px -5px 10px #00acac;
 }
 
+#labeloui {
 
+    position: relative;
+}
+
+#labeloui::before {
+    content: "";
+    height: 35px;
+    width: 35px;
+    display: block;
+    background: url(./objet/icon/like.png) no-repeat center;
+    background-size: 90%;
+    position: absolute;
+
+}
+
+#labeloui:hover::before {
+    background-size: 100%;
+}
+
+#labelnon {
+    position: relative;
+}
+
+#labelnon::before {
+    content: "";
+    height: 35px;
+    width: 35px;
+    display: block;
+    background: url(./objet/icon/dislike.png) no-repeat center;
+    background-size: 90%;
+    position: absolute;
+}
+
+#labelnon:hover::before {
+    background-size: 100%;
+}
+
+#labeloui::after {
+    content: "";
+    height: 35px;
+    width: 35px;
+    display: block;
+    background: url(./objet/icon/likeClicked.png) no-repeat center;
+    background-size: 90%;
+    position: absolute;
+    opacity: 0;
+}
+
+#labelnon::after {
+    content: "";
+    height: 35px;
+    width: 35px;
+    display: block;
+    background: url(./objet/icon/dislikeClicked.png) no-repeat center;
+    background-size: 90%;
+    position: absolute;
+    opacity: 0;
+}
+
+#curvecontact::before {
+    content: "";
+    height: 200px;
+    width: 200px;
+    display: block;
+    background: url(./objet/MERCI.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: 80%;
+    top: 60px;
+
+}
 
 @keyframes send {
     0% {
