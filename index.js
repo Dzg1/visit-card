@@ -117,8 +117,3 @@ card3.addEventListener("click", () => {
 });
 
 /******like********/
-const oui = document.getElementById("labeloui");
-const non = document.getElementById("labelnon");
-
-console.log(check);
-console.log(uncheck);
