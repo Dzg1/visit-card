@@ -117,3 +117,19 @@ card3.addEventListener("click", () => {
 });
 
 /******like********/
+const oui = document.getElementById("oui");
+const non = document.getElementById("non");
+const merci = document.getElementById("merci");
+
+console.log(oui);
+console.log(labeloui);
+console.log(merci);
+
+oui.addEventListener("click", () => {
+  merci.style.transform = "rotate(21deg)";
+  console.log("clicked");
+});
+
+non.addEventListener("click", () => {
+  merci.style.transform = "rotate(21deg) translateY(150px)";
+});

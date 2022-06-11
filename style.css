@@ -692,6 +692,7 @@ nav ::selection {
     bottom: -250px;
 }
 
+
 #backgroundcontact {
     background: rgb(242, 242, 242);
     width: 100%;
@@ -779,6 +780,7 @@ nav ::selection {
     opacity: 1;
 }
 
+
 #non:checked~#labelnon::before {
     opacity: 0;
 }
@@ -854,19 +856,19 @@ nav ::selection {
     opacity: 0;
 }
 
-#curvecontact::before {
-    content: "";
+#merci {
     height: 150px;
     width: 150px;
     display: block;
-    background: url(./objet/MERCI.png) no-repeat center;
-    background-size: 100%;
     position: absolute;
     left: 80%;
     top: 30px;
     transform: rotate(21deg) translateY(150px);
-
+    transition: 1s ease-in;
 }
+
+
+
 
 
 @keyframes send {
