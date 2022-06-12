@@ -18,28 +18,6 @@
 
 
 
-@media screen and (max-width: 3440px) {
-    #title {
-
-        background: grey;
-        display: flex-box;
-    }
-
-    #logotitle {
-        background: blue;
-
-    }
-
-    #reseaux {
-        background: red;
-    }
-
-    #description {
-        background: violet;
-        width: 30%;
-    }
-}
-
 
 
 * {
@@ -233,12 +211,13 @@ nav ::selection {
 /*************/
 
 
-#title {
+.title {
 
 
     margin-top: 100px;
     width: 100%;
     height: 600px;
+    padding-top: 20px;
     position: relative;
     display: flex;
     z-index: 0;
@@ -249,15 +228,15 @@ nav ::selection {
 #reseaux {
     text-align: center;
     height: 500px;
-    width: 20%;
-
+    width: 380px;
+    position: relative;
     cursor: url(./objet/cursor/crosshair.png), auto;
 }
 
 #logotitle {
 
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     justify-content: center;
     display: flex;
 }
@@ -265,9 +244,11 @@ nav ::selection {
 #description {
 
     height: 500px;
-    width: 20%;
+    width: 380px;
+    padding-top: 100px;
 
 }
+
 
 #title ::selection {
     color: #fff;
@@ -537,6 +518,66 @@ nav ::selection {
     line-height: 44px;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .title {
+
+        background: grey;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logotitle {
+        background: blue;
+        order: 1;
+    }
+
+    #reseaux {
+        background: red;
+        order: 3;
+    }
+
+    #description {
+        background: violet;
+        order: 2;
+    }
+
+    #iconrso1 {
+        animation: float 10s linear infinite;
+    }
+
+    #iconrso2 {
+        animation: float 10s linear infinite;
+    }
+
+    #iconrso3 {
+        animation: float 10s linear infinite;
+    }
+
+    #iconrso4 {
+        animation: float 10s linear infinite;
+    }
+
+    #iconrso5 {
+        animation: float 10s linear infinite;
+    }
+}
 
 /****************/
 
