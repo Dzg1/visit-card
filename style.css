@@ -256,6 +256,9 @@ nav ::selection {
 }
 
 
+h2 {
+    padding-top: 75px;
+}
 
 #spanh2 {
     font-family: "title";
@@ -536,7 +539,6 @@ nav ::selection {
 @media screen and (max-width: 1280px) {
     .title {
 
-        background: grey;
         height: auto;
         flex-direction: column;
         align-items: center;
@@ -544,18 +546,28 @@ nav ::selection {
     }
 
     #logotitle {
-        background: blue;
         order: 1;
     }
 
     #reseaux {
-        background: red;
         order: 3;
+        height: 200px;
     }
 
     #description {
-        background: violet;
         order: 2;
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    #icon {
+        display: flex;
+    }
+
+    .iconrso {
+        position: relative;
+        top: 20px;
     }
 
     #iconrso1 {
@@ -564,6 +576,7 @@ nav ::selection {
 
     #iconrso2 {
         animation: float 10s linear infinite;
+
     }
 
     #iconrso3 {
