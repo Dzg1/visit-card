@@ -547,17 +547,25 @@ h2 {
 
     #logotitle {
         order: 1;
+        width: 500px;
+
+    }
+
+    #imglogotitle {
+        width: 500px;
     }
 
     #reseaux {
         order: 3;
-        height: 200px;
+        height: auto;
+        padding-bottom: 50px;
     }
 
     #description {
         order: 2;
         padding: 20px;
         height: auto;
+        width: 90%;
         text-align: center;
     }
 
