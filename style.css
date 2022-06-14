@@ -689,59 +689,59 @@ h2 {
 
 
 #c1 {
-    background: linear-gradient(215deg, rgb(255, 255, 255), rgb(218, 218, 218));
+    background: linear-gradient(215deg, rgb(245, 245, 245), rgb(218, 218, 218));
     box-shadow: -10px 10px 10px rgb(198, 198, 198),
-        10px -10px 10px rgb(255, 255, 255);
+        10px -10px 10px rgb(245, 245, 245);
 
 }
 
 #c1:hover {
     background: linear-gradient(215deg, #dadada, #ffffff);
     box-shadow: -10px 10px 10px #c6c6c6,
-        10px -10px 10px #ffffff;
+        10px -10px 10px rgb(245, 245, 245);
 
 }
 
 .c1clicked {
     background: rgb(235, 235, 235) !important;
     box-shadow: inset -19px 19px 19px rgb(189, 189, 189), inset 19px -19px 19px rgb(255, 255, 255), -10px 10px 10px rgb(198, 198, 198),
-        10px -10px 10px rgb(255, 255, 255) !important;
+        10px -10px 10px rgb(245, 245, 245) !important;
 }
 
 #c2 {
-    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(218, 218, 218));
+    background: linear-gradient(180deg, rgb(245, 245, 245), rgb(218, 218, 218));
     box-shadow: 0px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(255, 255, 255);
+        0px -10px 10px rgb(245, 245, 245);
 }
 
 #c2:hover {
     background: linear-gradient(180deg, #dadada, #ffffff);
     box-shadow: 0px 10px 10px #c6c6c6,
-        0px -10px 10px #ffffff;
+        0px -10px 10px rgb(245, 245, 245);
 }
 
 .c2clicked {
     background: rgb(235, 235, 235) !important;
     box-shadow: inset 0px 19px 19px rgb(189, 189, 189), inset 0px -19px 19px rgb(255, 255, 255), 0px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(255, 255, 255) !important;
+        0px -10px 10px rgb(245, 245, 245) !important;
 }
 
 #c3 {
-    background: linear-gradient(145deg, rgb(255, 255, 255), rgb(218, 218, 218));
+    background: linear-gradient(145deg, rgb(245, 245, 245), rgb(218, 218, 218));
     box-shadow: 10px 10px 10px rgb(198, 198, 198),
-        -10px -10px 10px rgb(255, 255, 255);
+        -10px -10px 10px rgb(245, 245, 245);
 }
 
 #c3:hover {
-    background: linear-gradient(145deg, #dadada, #ffffff);
-    box-shadow: 10px 10px 10px #c6c6c6,
-        -10px -10px 10px #ffffff;
+    background: linear-gradient(145deg, rgb(218, 218, 218), rgb(255, 255, 255));
+    box-shadow: 10px 10px 10px rgb(198, 198, 198),
+        -10px -10px 10px rgb(245, 245, 245);
 }
 
 .c3clicked {
     background: rgb(235, 235, 235) !important;
     box-shadow: inset 19px 19px 19px rgb(189, 189, 189), inset -19px -19px 19px rgb(255, 255, 255), 10px 10px 10px rgb(198, 198, 198),
-        -10px -10px 10px rgb(255, 255, 255) !important;
+        -10px -10px 10px rgb(245, 245, 245) !important;
 }
 
 .pc {
@@ -762,7 +762,7 @@ h2 {
 
 #contact {
     padding-top: 20px;
-    height: 700px;
+    height: auto;
     background: #008080;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
@@ -823,6 +823,8 @@ h2 {
     height: 100px;
     width: 100px;
     display: block;
+
+    margin-bottom: 60px;
     margin-left: 50%;
     transform: translate(-50%);
     border-radius: 10px;
