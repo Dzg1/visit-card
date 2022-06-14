@@ -600,6 +600,13 @@ h2 {
     }
 }
 
+@media screen and (max-width:910px) {
+    #logotitle {
+        width: 80%;
+        height: auto;
+    }
+}
+
 /****************/
 
 
@@ -674,15 +681,18 @@ h2 {
 #cards {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .c123 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     height: 300px;
     width: 300px;
     margin-top: 80px;
     border-radius: 200px;
-    padding-top: 50px;
     cursor: pointer;
 }
 
@@ -756,6 +766,18 @@ h2 {
 .cardtitle {
     font-family: "title";
     font-weight: 500;
+    padding-top: 0;
+}
+
+@media screen and (max-width:1000px) {
+    #cards {
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .card {
+        height: 1500px;
+    }
 }
 
 /*******************/
