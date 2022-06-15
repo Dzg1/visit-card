@@ -823,6 +823,7 @@ h2 {
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 #contact ::selection {
@@ -836,7 +837,7 @@ h2 {
     width: 100%;
     position: absolute;
     clip-path: ellipse(72% 100% at 72% 100%);
-    bottom: -250px;
+    bottom: -270px;
 }
 
 
