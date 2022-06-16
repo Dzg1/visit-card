@@ -26,7 +26,7 @@
     text-decoration: none;
     --greeen: #1fe07c;
     --bluue: rgb(57, 166, 218);
-    --bluesoft: rgb(103, 222, 200);
+    --bluesoft: #67dec8;
     --randomx: 10px;
     --randomy: 10px;
 }
@@ -824,6 +824,7 @@ h2 {
     position: relative;
     text-align: center;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 
 #contact ::selection {
@@ -858,6 +859,7 @@ h2 {
 .contact {
     display: grid;
     width: 50%;
+
     margin-left: 50%;
     transform: translate(-50%);
     border-radius: 5px;
@@ -1007,9 +1009,9 @@ h2 {
     display: block;
     position: absolute;
     left: 80%;
-    top: 30px;
-    transform: rotate(21deg) translateY(150px);
+    bottom: -154px;
     transition: 1s ease-in;
+    transform: rotate(3deg);
 }
 
 

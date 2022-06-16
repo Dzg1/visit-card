@@ -127,14 +127,14 @@ console.log(labeloui);
 console.log(merci);
 
 oui.addEventListener("click", () => {
-  merci.style.transform = "rotate(21deg)";
+  merci.style.transform = "translateY(-150px) rotate(3deg)";
   labeloui.style.background = "rgb(0, 128, 128)";
   labeloui.style.boxShadow =
     "inset 5px 5px 10px rgb(0, 84, 84), inset -5px -5px 10px rgb(0, 172, 172), 5px 5px 10px rgb(0, 84, 84),-5px -5px 10px rgb(0, 172, 172)";
 });
 
 non.addEventListener("click", () => {
-  merci.style.transform = "rotate(21deg) translateY(150px)";
+  merci.style.transform = "translateY(0px) rotate(3deg)";
   labeloui.style.background = "linear-gradient(145deg, #008989, #007373)";
   labeloui.style.boxShadow =
     "5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148)";
