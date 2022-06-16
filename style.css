@@ -1044,3 +1044,13 @@ h2 {
 #sub:hover {
     animation: send 1.5s linear infinite;
 }
+
+@media screen and (max-width:800px) {
+    .contact {
+        width: 90%;
+    }
+
+    #merci {
+        left: 65%;
+    }
+}
