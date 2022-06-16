@@ -834,18 +834,18 @@ h2 {
 
 #curvecontact {
     background: var(--bluesoft);
-    height: 300px;
+    height: 500px;
     width: 100%;
     position: absolute;
     clip-path: ellipse(72% 100% at 72% 100%);
-    bottom: -270px;
+    bottom: -430px;
 }
 
 
 #backgroundcontact {
     background: rgb(235, 235, 235);
     width: 100%;
-    height: 40px;
+    height: 300px;
     position: absolute;
     z-index: -2;
 }
