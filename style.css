@@ -41,7 +41,8 @@ body {
 }
 
 nav {
-    background: transparent;
+    background: white;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
     height: 70px;
     width: 100%;
     position: fixed;
@@ -182,7 +183,6 @@ nav ::selection {
     overflow: hidden;
     border-bottom: solid 3px;
     border-bottom-color: var(--bluesoft);
-    padding: center;
     padding-top: 6px;
     color: teal;
     font-family: "sans";
