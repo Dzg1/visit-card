@@ -46,10 +46,11 @@ nav {
     height: 70px;
     width: 100%;
     position: fixed;
-    left: 0;
-    right: 0;
     top: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ::selection {
@@ -61,7 +62,6 @@ nav ::selection {
     padding: 7px 0;
     display: flex;
     align-items: right;
-    justify-content: flex-end;
     align-items: center;
     margin: 0;
 
@@ -107,12 +107,12 @@ nav ::selection {
 
 #main {
 
-    display: none;
-    top: 45px;
     position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
     padding: 0;
-    right: 225px;
 }
 
 .main {
@@ -125,14 +125,11 @@ nav ::selection {
     border-radius: 555px;
     line-height: 35px;
     border: 2px solid var(--bluue);
-
-    transition: 0.1s;
-
 }
 
 .main:hover {
     border-radius: 20px;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .main a {
@@ -161,6 +158,10 @@ nav ::selection {
     background: url(./objet/spanishflag.jpg) center;
     background-size: cover;
 
+}
+
+.burger {
+    display: none;
 }
 
 @keyframes marquee {
