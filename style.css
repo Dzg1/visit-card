@@ -58,6 +58,11 @@ nav ::selection {
     background: var(--bluue);
 }
 
+.nav-name a {
+    color: var(--bluue);
+    font-family: "nermola";
+}
+
 .nav-list {
     padding: 7px 0;
     display: flex;
@@ -77,7 +82,7 @@ nav ::selection {
 }
 
 .nav-item a {
-
+    cursor: pointer;
     letter-spacing: 3px;
     color: black;
     font-family: "sans";
@@ -94,11 +99,6 @@ nav ::selection {
     margin-right: auto;
 }
 
-.nav-name a {
-    color: var(--bluue);
-    font-family: "nermola";
-}
-
 #menu {
     position: relative;
     text-align: center;
@@ -106,7 +106,7 @@ nav ::selection {
 }
 
 #main {
-
+    display: none;
     position: absolute;
     top: 25px;
     left: 50%;
@@ -858,7 +858,7 @@ h2 {
 .contact {
     display: grid;
     width: 50%;
-
+    resize: none;
     margin-left: 50%;
     transform: translate(-50%);
     border-radius: 5px;
