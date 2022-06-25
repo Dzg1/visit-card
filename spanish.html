@@ -1,56 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./objet/icon-neon.png">
-    <script src="index.js"></script>
+    <link rel="icon" href="./objet/5.png">
     <title>visit card</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"
+        defer></script>
+    <script src="./typing.js" defer></script>
+    <script src="./index.js" defer></script>
 </head>
+
 <body>
     <nav>
-       <ul class="nav-list"> 
-           <li class="nav-name"><a href="#">DzG</a></li>
-           <div class="language">
-               <div id="container">
-                           <li class="nav-left nav-item"><a>idioma</a> </li>
-                </div>
-                   
-                        
-                        <br/>
-                        <ul class="main">
-                            <li><a href="./english.html">English</a></li>
-                            <li><a href="./index.html">Francais</a></li>
-                            <li><a href="./deutsh.html">Deutsh</a></li>
-                            <li><a href="./spanish.html">Spanish</a></li>
-                        </ul>
-                </div>
-            </div>
-                
-
-
-           <li class="nav-left nav-item "><a href="./contact.php">Contáctame</a></li>
-       </ul>
+        <div class="nav-name"><a href="#">DzG</a></div>
+        <ul class="nav-list">
+            <li id="menu" class="nav-item"><a>Language</a>
+                <ul id="main">
+                    <li class="main" id="l1"><a href="./english.html">EN</a></li>
+                    <li class="main" id="l2"><a href="./index.html">FR</a></li>
+                    <li class= "main" id="l3"><a href="./deutsh.html">DE</a></li>
+                    <li class="main" id="l4"><a href="./spanish.html">SP</a></li>
+                </ul>
+            </li>
+            <li class="nav-item "><a href="./contact.php">Me contacter</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar">ok</span>
+        </button>
     </nav>
+    <div id="bandeau">
+        <div>
+            <span>&#9835 I'm sittin' on the dock of the bay
+                Watching the tide roll away
+                I'm sitting on the dock of the bay, wasting time
+                Look like nothin's gonna change
+                Everything still remains the same
+                I can't do what ten people tell me to do
+                So I guess I'll remain the same. &#9835</span>
+            <span>&#9835 I'm sittin' on the dock of the bay
+                Watching the tide roll away
+                I'm sitting on the dock of the bay, wasting time
+                Look like nothin's gonna change
+                Everything still remains the same
+                I can't do what ten people tell me to do
+                So I guess I'll remain the same. &#9835</span>
 
-    <div id="title">
-      <H1 class="container"></H1>
-      <img class="container" src="./objet/new-neo.png" alt="logo">
-      <h3 class="container"></h3>
+
+        </div>
+    </div>
+    <div class="title">
+        <div id="reseaux">
+            <h2 id="reseauxtitle"> <span id="spanh2">Suivez moi sur mes réseaux sociaux</span></h2>
+            <ul>
+                <div id="icon">
+                    <li><a href="https://github.com/Dzg1"><img id="iconrso1" class="iconrso"
+                                src="./objet/icon/github@2x.png" alt="Github"><span id="spanrso1" class="spanrso">Suivez
+                                moi
+                                sur Github</span></a></li>
+                    <li><a href=""><img id="iconrso2" class="iconrso" src="./objet/icon/discord@2x.png"
+                                alt="Discord"><span id="spanrso2" class="spanrso">Suivez moi sur Discord</span></a></li>
+                    <li><a href=""><img id="iconrso3" class="iconrso" src="./objet/icon/linked-in@2x.png"
+                                alt="Linked in"><span id="spanrso3" class="spanrso">Suivez moi sur Linked in</span></a>
+                    </li>
+                    <li><a href=""><img id="iconrso4" class="iconrso" src="./objet/icon/snap-chat@2x.png"
+                                alt="Snapchat">
+                            <span id="spanrso4" class="spanrso">Suivez moi sur Snapchat</span></a></li>
+                    <li><a href=""><img id="iconrso5" class="iconrso" src="./objet/icon/twitter@2x.png" alt="Twitter">
+                            <span id="spanrso5" class="spanrso">Suivez moi sur Twitter</span></a></li>
+                </div>
+            </ul>
+        </div>
+
+
+        <div id="logotitle">
+            <img id="imglogotitle" src="./objet/dzg.gif" alt="Logo DzG">
+        </div>
+
+
+        <div id="description">
+            <h2 id="descriptiontitle">Bonjour le monde !! </h2>
+            <span>Je suis DzG <br>Un apprenti développeur. <br>Je travail avec <span class="typing"></span>
+                <br>N'hesitez pas a faire appelle à moi! </span>
+        </div>
     </div>
 
 
-    <div id="presentation">
-        <h4>présentation</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non sed voluptates, exercitationem suscipit harum laborum maiores tempore ab ratione voluptatem quisquam quae esse, adipisci libero. Sed minima autem minus eveniet inventore ea? Inventore voluptates libero, eaque officiis, facilis non laboriosam quos repellendus nulla quia dignissimos omnis corrupti reprehenderit obcaecati! Accusamus voluptate quas ratione, laborum hic sit similique quo vitae iusto ullam iure! Fugiat aliquid doloribus culpa eaque ex.!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non sed voluptates, exercitationem suscipit harum laborum maiores tempore ab ratione voluptatem quisquam quae esse, adipisci libero. Sed minima autem minus eveniet inventore ea? Inventore voluptates libero, eaque officiis, facilis non laboriosam quos repellendus nulla quia dignissimos omnis corrupti reprehenderit obcaecati! Accusamus voluptate quas ratione, laborum hic sit similique quo vitae iusto ullam iure! Fugiat aliquid doloribus culpa eaque ex.!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non sed voluptates, exercitationem suscipit harum laborum maiores tempore ab ratione voluptatem quisquam quae esse, adipisci libero. Sed minima autem minus eveniet inventore ea? Inventore voluptates libero, eaque officiis, facilis non laboriosam quos repellendus nulla quia dignissimos omnis corrupti reprehenderit obcaecati! Accusamus voluptate quas ratione, laborum hic sit similique quo vitae iusto ullam iure! Fugiat aliquid doloribus culpa eaque ex.!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, non sed voluptates, exercitationem suscipit harum laborum maiores tempore ab ratione voluptatem quisquam quae esse, adipisci libero. Sed minima autem minus eveniet inventore ea? Inventore voluptates libero, eaque officiis, facilis non laboriosam quos repellendus nulla quia dignissimos omnis corrupti reprehenderit obcaecati! Accusamus voluptate quas ratione, laborum hic sit similique quo vitae iusto ullam iure! Fugiat aliquid doloribus culpa eaque ex.!</p>
+
+    <div id="thepresentation">
+        <h4 id="presentationtitle">Qui suis je ?</h4>
+        <p id="presentation">Jeune apprenti développeur, Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Eum mollitia
+            repellat omnis ex atque eius id nihil enim assumenda fuga sit itaque, illum amet deserunt adipisci
+            tempora
+            nisi facere iusto rerum totam cupiditate velit dignissimos? <br> Enim, delectus nesciunt. Voluptatum
+            sapiente possi alet ametmus perferendis in sunt illo aliquid natus neque ullam. <br> accusantium veniam
+            molestias,
+            maxime laborum quod reiciendis praesentium impedit, eum voluptates. </p>
+
+
+        <div id="backgroundpresentation"></div>
+        <div id="curvecard"></div>
     </div>
+    <div class="card">
+        <h2 id="thecardtitle">Que fais-je ?</h2>
+        <ul id="cards">
+            <li class="c123" id="c1">
+                <h2 class="cardtitle"> Votre site vitrine </h2>
+                <p id="pc1" class="pc">Créez un site web qui sur mesure pour présentez votre projet. Une veritable
+                    vitrine numerique pour vous mettre en avant</p>
+            </li>
+            <li class="c123" id="c2">
+                <h2 class="cardtitle">Votre boutique de e-commerce </h2>
+                <p id="pc2" class="pc">Vous avez besoin d'un "e-shop pour vendre vos produits? Créons le ensemble!</p>
+            </li>
+            <li class="c123" id="c3">
+                <h2 class="cardtitle">Votre identitez numerique</h2>
+                <p id="pc3" class="pc"> Forgez vous une vrai identité numérique avec un logo des codes couleurs et un
+                    esprit qui vous ressemble! </p>
+            </li>
 
+        </ul>
 
+        <div id="curvecontact">
+
+        </div>
+    </div>
+    <div id="backgroundcontact"></div>
+    <div id="contact">
+        <h2 id="contacttitle">Contacter moi</h2>
+        <form action="">
+            <input class="contact" type="text" placeholder="Nom" required>
+            <input class="contact" type="email" placeholder="Adresse mail" required>
+            <textarea class="contact" placeholder="Votre message" name="" id="" cols="30" rows="10"></textarea>
+            <div id="like">
+                <p class="ask"> Avez vous apréciez mon site ?</p>
+                <input type="radio" name="like" class="divlike" id="oui" required="required"><label id="labeloui"
+                    class="labellike" for="oui" required="required"></label>
+                <input type="radio" name="like" class="divlike" id="non" required="required"><label id="labelnon"
+                    class="labellike" for="non" required="required"></label>
+            </div>
+            <button id="sub" type="submit">🚀</button>
+            <div id="support"><img id="merci" src="./objet/merci/merci.png" alt="Merci"></div>
+        </form>
+    </div>
 
 </body>
+
 </html>
