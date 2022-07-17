@@ -15,7 +15,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap");
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 
 
 
@@ -162,6 +162,12 @@ nav ::selection {
 
 .burger {
     display: none;
+}
+
+@media screen and (min-width:700px) {
+    .nav-item>a {
+        background: blue;
+    }
 }
 
 @keyframes marquee {
