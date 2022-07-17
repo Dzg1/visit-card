@@ -90,7 +90,6 @@ nav ::selection {
 
 .nav-item a:hover {
     color: var(--bluue);
-    text-decoration: underline;
 }
 
 .nav-name {
@@ -165,8 +164,18 @@ nav ::selection {
 }
 
 @media screen and (min-width:700px) {
-    .nav-item>a {
-        background: blue;
+    .nav-item>a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--bluue);
+        transition: width 0.4s;
+    }
+
+    .nav-item:hover>a::after {
+        width: 100%;
+
     }
 }
 
