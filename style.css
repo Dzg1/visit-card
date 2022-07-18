@@ -586,6 +586,7 @@ h2 {
         order: 1;
         width: 500px;
         z-index: -1;
+        top: 100px;
     }
 
     #imglogotitle {
@@ -604,7 +605,7 @@ h2 {
         height: auto;
         width: 90%;
         text-align: center;
-        margin-top: 500px;
+        margin-top: 400px;
     }
 
     #icon {
