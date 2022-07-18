@@ -41,6 +41,7 @@ body {
 }
 
 nav {
+
     background: white;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
     height: 70px;
@@ -254,7 +255,7 @@ nav ::selection {
     position: relative;
     display: flex;
     z-index: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -272,6 +273,9 @@ nav ::selection {
     width: 500px;
     justify-content: center;
     display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #description {
@@ -386,7 +390,7 @@ h2 {
 @keyframes movegit {
     0% {
         top: 230px;
-        left: 500px;
+        left: 340px;
     }
 
     25% {
@@ -396,7 +400,7 @@ h2 {
 
     50% {
         top: 450px;
-        left: 380px;
+        left: 340px;
     }
 
     75% {
@@ -406,7 +410,7 @@ h2 {
 
     100% {
         top: 230px;
-        left: 500px;
+        left: 340px;
     }
 }
 
@@ -422,7 +426,7 @@ h2 {
 
     25% {
         top: 550px;
-        left: 500px;
+        left: 340px;
     }
 
     50% {
@@ -448,7 +452,7 @@ h2 {
 @keyframes movelinkedin {
     0% {
         top: 280px;
-        left: 480px;
+        left: 340px;
     }
 
     25% {
@@ -468,7 +472,7 @@ h2 {
 
     100% {
         top: 280px;
-        left: 480px;
+        left: 340px;
     }
 }
 
@@ -484,7 +488,7 @@ h2 {
 
     25% {
         top: 290px;
-        left: 415px
+        left: 340px
     }
 
     50% {
@@ -525,7 +529,7 @@ h2 {
 
     75% {
         top: 230px;
-        left: 415px;
+        left: 340px;
     }
 
     100% {
@@ -581,7 +585,7 @@ h2 {
     #logotitle {
         order: 1;
         width: 500px;
-
+        z-index: -1;
     }
 
     #imglogotitle {
@@ -600,6 +604,7 @@ h2 {
         height: auto;
         width: 90%;
         text-align: center;
+        margin-top: 500px;
     }
 
     #icon {
