@@ -163,28 +163,111 @@ nav ::selection {
 
 @media screen and (max-width:699px) {
 
+    .nav-name {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translate(35px)
+    }
 
     .nav-list {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 0%;
         height: 100vh;
         position: absolute;
         top: 60px;
         right: 0px;
         background: white;
+        transition: all .4s ease-in-out;
+
+    }
+
+    .show-nav .nav-list {
+        width: 100%;
+    }
+
+    .nav-item {
+        transform: translateX(110%);
+    }
+
+    .show-nav .nav-item {
+        transform: translateX(0%);
     }
 
     .nav-item>a {
         display: block;
         padding: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         transition: all 0.4s ease-in-out;
     }
 
     .nav-item>a:hover {
         padding-left: 2rem;
         letter-spacing: 5px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        padding: 0px;
+        padding-right: 10px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: black;
+        border-radius: 3px;
+        transition: .4s ease-in-out;
+
+
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 35px;
+        height: 3px;
+        left: 0px;
+        position: absolute;
+        background: black;
+        border-radius: 3px;
+        transition: .4s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translatey(-12px);
+    }
+
+    .bar::after {
+        transform: translatey(12px);
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    .show-nav .first {
+        transition: 1s ease-out;
+    }
+
+    .show-nav .second {
+        transition: 1.1s ease-out;
     }
 }
 

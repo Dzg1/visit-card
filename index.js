@@ -139,3 +139,12 @@ non.addEventListener("click", () => {
   labeloui.style.boxShadow =
     "5px 5px 10px rgb(0, 108, 108), -5px -5px 10px rgb(0, 148, 148)";
 });
+
+function toggleMEnu() {
+  const navbar = document.querySelector(".navbar");
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => {
+    navbar.classList.toggle("show-nav");
+  });
+}
+toggleMEnu();
