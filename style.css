@@ -278,24 +278,60 @@ nav ::selection {
         background: red;
     }
 
-    .show-nav .first {
+    .show-nav .zero {
         transition: 1s ease-out;
+
+    }
+
+    .show-nav .first {
+        transition: 1.1s ease-out;
     }
 
     .show-nav .second {
-        transition: 1.1s ease-out;
+        transition: 1.2s ease-out;
+    }
+
+    .first {
+        width: 100%;
     }
 
     #main {
         flex-direction: row;
         padding: 0;
+        position: initial;
+        padding-left: 10px;
+        width: 100%;
     }
 
     .main {
         margin: 5px;
         transform: translate(0px);
+        width: 160px;
+        height: 50px;
+        padding: 7;
     }
 
+    .main:hover {
+        transform: scale(1.3);
+    }
+
+    .first:hover .main {
+        display: flex;
+        transform: translatey(0px);
+        margin: 5px;
+        width: auto;
+        height: 50px;
+        padding: 7;
+    }
+
+    #main:hover .main {
+        display: flex;
+        transform: translatey(0px);
+        margin: 5px;
+        width: auto;
+        height: 50px;
+        padding: 7;
+    }
 }
 
 @media screen and (min-width:700px) {
