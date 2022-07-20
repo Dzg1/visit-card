@@ -106,11 +106,12 @@ nav ::selection {
     position: absolute;
     width: 100px;
     padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
     display: none;
-    flex-direction: column;
     transform: translateY(-150px);
 
 }
@@ -234,8 +235,8 @@ nav ::selection {
     .bar {
         display: block;
         width: 35px;
-        height: 3px;
-        background: black;
+        height: 2px;
+        background: var(--bluue);
         border-radius: 3px;
         transition: .4s ease-in-out;
 
@@ -251,10 +252,10 @@ nav ::selection {
     .bar::after {
         content: "";
         width: 35px;
-        height: 3px;
+        height: 2px;
         left: 0px;
         position: absolute;
-        background: black;
+        background: var(--bluue);
         border-radius: 3px;
         transition: .4s ease-in-out;
     }
@@ -269,10 +270,12 @@ nav ::selection {
 
     .show-nav .bar::before {
         transform: rotate(45deg);
+        background: red;
     }
 
     .show-nav .bar::after {
         transform: rotate(-45deg);
+        background: red;
     }
 
     .show-nav .first {
@@ -281,6 +284,16 @@ nav ::selection {
 
     .show-nav .second {
         transition: 1.1s ease-out;
+    }
+
+    #main {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .main {
+        margin: 5px;
+        transform: translate(0px);
     }
 
 }
