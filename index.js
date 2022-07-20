@@ -16,7 +16,7 @@ const logorso = document.getElementById("logorso");
 const card1 = document.getElementById("c1");
 const card2 = document.getElementById("c2");
 const card3 = document.getElementById("c3");
-
+/*******
 langue.addEventListener("mouseover", () => {
   langues.style.display = "grid";
 });
@@ -29,7 +29,7 @@ langue.addEventListener("mouseout", () => {
 langues.addEventListener("mouseout", () => {
   langues.style.display = "none";
 });
-
+***********/
 /*****RESEAUX******/
 
 logorso1.addEventListener("mouseover", () => {
