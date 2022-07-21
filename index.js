@@ -122,10 +122,6 @@ const labeloui = document.getElementById("labeloui");
 const non = document.getElementById("non");
 const merci = document.getElementById("merci");
 
-console.log(oui);
-console.log(labeloui);
-console.log(merci);
-
 oui.addEventListener("click", () => {
   merci.style.transform = "translateY(-150px) rotate(3deg)";
   labeloui.style.background = "rgb(0, 128, 128)";
@@ -148,3 +144,14 @@ function toggleMEnu() {
   });
 }
 toggleMEnu();
+
+function toggleLanguage() {
+  const languageBtn = document.querySelector(".first");
+  const bubble = document.querySelector(".main");
+  language.addEventListener("click", () => {
+    bubble.classList.toggle("show-language");
+  });
+}
+console.log(bubble);
+
+toggleeLanguage();

@@ -117,12 +117,7 @@ nav ::selection {
 }
 
 
-.first:hover .main {
-    display: flex;
-    margin: 0 auto 0 auto;
-    transform: translatey(0px);
 
-}
 
 
 .main {
@@ -306,7 +301,7 @@ nav ::selection {
     .main {
         margin: 5px;
         transform: translate(0px);
-        width: 160px;
+        width: auto;
         height: 50px;
         padding: 7;
     }
@@ -315,22 +310,8 @@ nav ::selection {
         transform: scale(1.3);
     }
 
-    .first:hover .main {
-        display: flex;
-        transform: translatey(0px);
-        margin: 5px;
-        width: auto;
-        height: 50px;
-        padding: 7;
-    }
-
-    #main:hover .main {
-        display: flex;
-        transform: translatey(0px);
-        margin: 5px;
-        width: auto;
-        height: 50px;
-        padding: 7;
+    .shox-language {
+        background: blue;
     }
 }
 
@@ -347,6 +328,13 @@ nav ::selection {
 
     .nav-item:hover>a::after {
         width: 100%;
+    }
+
+    .first:hover .main {
+        display: flex;
+        margin: 0 auto 0 auto;
+        transform: translatey(0px);
+
     }
 
 }
@@ -396,8 +384,17 @@ nav ::selection {
 }
 
 /*************/
+.banniere {
+    width: 100%;
+    height: 100vh;
+    background: url(./objet/bannière.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    position: fixed;
+}
 
-
+/***************/
 .title {
 
 
@@ -426,9 +423,6 @@ nav ::selection {
     width: 500px;
     justify-content: center;
     display: flex;
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 #description {
@@ -727,6 +721,7 @@ h2 {
 }
 
 @media screen and (max-width: 1280px) {
+
     .title {
 
         height: auto;
@@ -758,7 +753,6 @@ h2 {
         height: auto;
         width: 90%;
         text-align: center;
-        margin-top: 400px;
     }
 
     #icon {
