@@ -385,11 +385,12 @@ nav ::selection {
 
 /*************/
 .banniere {
+    top: 60px;
     width: 100%;
     height: 100vh;
     background: url(./objet/bannière.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     z-index: -2;
     position: fixed;
 }
@@ -397,11 +398,13 @@ nav ::selection {
 /***************/
 .title {
 
-
-    margin-top: 100px;
+    background: white;
+    margin-top: 95px;
+    margin-bottom: 900px;
     width: 100%;
-    height: 600px;
-    padding-top: 20px;
+    height: 700px;
+    padding-top: 40px;
+    padding-bottom: auto;
     position: relative;
     display: flex;
     z-index: 0;
@@ -1005,7 +1008,7 @@ h2 {
 #contact {
     padding-top: 20px;
     height: auto;
-    background: #008080;
+    background: teal;
     clip-path: ellipse(93% 100% at 31.08% 100%);
     position: relative;
     text-align: center;
@@ -1075,7 +1078,7 @@ h2 {
     transform: translate(-50%);
     border-radius: 10px;
     border: none;
-    background: linear-gradient(145deg, #008989, #007373);
+    background: linear-gradient(145deg, rgb(0, 138, 138), #007373);
     box-shadow: 10px 10px 20px rgb(0, 108, 108), -10px -10px 20px rgb(0, 148, 148);
     margin-top: 20px;
     cursor: pointer;
@@ -1240,4 +1243,14 @@ h2 {
     #merci {
         left: 65%;
     }
+}
+
+#contact::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background: var(--bluesoft);
+    border-radius: 50px;
 }
