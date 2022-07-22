@@ -410,6 +410,8 @@ nav ::selection {
     z-index: 0;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 #reseaux {
@@ -456,7 +458,7 @@ h2 {
 }
 
 
-
+/**
 .spanrso {
     opacity: 0;
     position: absolute;
@@ -692,7 +694,7 @@ h2 {
     animation: movetwitter 15s linear infinite;
 }
 
-
+*****/
 
 
 #descriptiontitle {
@@ -1014,6 +1016,7 @@ h2 {
     text-align: center;
     padding-bottom: 30px;
     overflow: hidden;
+    box-shadow: 0px -5px 10px 0px #000000;
 }
 
 #contact ::selection {
@@ -1253,4 +1256,45 @@ h2 {
     margin: 0 auto 0 auto;
     background: var(--bluesoft);
     border-radius: 49px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+.navigation {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+    padding: 0;
+}
+
+.list {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.list a {
+    position: relative;
+    display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
 }
