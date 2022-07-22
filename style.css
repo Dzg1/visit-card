@@ -390,7 +390,7 @@ nav ::selection {
     height: 100vh;
     background: url(./objet/bannière.png) no-repeat;
     background-size: cover;
-    background-position: left;
+    /****background-position: left;****/
     z-index: -2;
     position: fixed;
 }
@@ -1292,9 +1292,75 @@ h2 {
 
 .list a {
     position: relative;
-    display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
 
+.list a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: .5s;
+    color: teal;
+}
+
+.list.active .icon {
+    transform: translatey(-32px);
+}
+
+.text {
+    position: absolute;
+    color: teal;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.list.active .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    top: -50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: var(--bluesoft);
+    border-radius: 50px;
+    border: 6px solid teal;
+    transition: .5s;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -10px 0 0 teal;
+}
+
+.indicator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 59px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    bord
 }
