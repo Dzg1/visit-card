@@ -31,7 +31,7 @@ langues.addEventListener("mouseout", () => {
 });
 ***********/
 /*****RESEAUX******/
-
+/*
 logorso1.addEventListener("mouseover", () => {
   spanrso1.style.opacity = "1";
   spanh2.style.opacity = "0";
@@ -145,13 +145,9 @@ function toggleMEnu() {
 }
 toggleMEnu();
 
-function toggleLanguage() {
-  const languageBtn = document.querySelector(".first");
-  const bubble = document.querySelector(".main");
-  language.addEventListener("click", () => {
-    bubble.classList.toggle("show-language");
-  });
+const list = document.querySelectorAll(".list");
+function activeLink() {
+  list.forEach((item) => item.classList.remove("active"));
+  this.classList.add("active");
 }
-console.log(bubble);
-
-toggleeLanguage();
+list.forEach((item) => item.addEventListener("click", activeLink));
