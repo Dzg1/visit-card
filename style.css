@@ -131,6 +131,9 @@ nav ::selection {
     color: var(--bluue);
     font-family: "sans";
     border: teal solid 1px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .reg-item a {
@@ -308,7 +311,9 @@ nav ::selection {
         padding: 0;
         position: initial;
         padding-left: 10px;
+        height: 50px;
         width: 100%;
+        background: grey;
     }
 
     .main {
@@ -362,7 +367,11 @@ nav ::selection {
         display: flex;
         margin: 0;
         padding: 0;
+        align-items: center;
         justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        background: grey;
     }
 
     .main {
