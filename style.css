@@ -78,6 +78,8 @@ nav ::selection {
     letter-spacing: 3px;
     color: var(--bluue);
     font-family: "sans";
+    height: auto;
+    width: 100%;
 }
 
 .nav-item a {
@@ -357,6 +359,8 @@ nav ::selection {
 
     .reglage {
         display: none;
+        border: 2px solid black;
+        padding: 0;
     }
 
     .first:hover>.reglage {
@@ -368,7 +372,7 @@ nav ::selection {
         margin: 0;
         padding: 0;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-arround;
         width: 100%;
         height: 50px;
         background: grey;
