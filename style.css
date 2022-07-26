@@ -78,19 +78,23 @@ nav ::selection {
     letter-spacing: 3px;
     color: var(--bluue);
     font-family: "sans";
-    height: auto;
+    height: 60px;
     width: 150px;
-    border: blue solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.nav-item a {
+.nav-item>a {
     cursor: pointer;
     letter-spacing: 3px;
     color: black;
     font-family: "sans";
+    width: auto;
 }
 
-.nav-item a:hover {
+.nav-item>a:hover {
     color: var(--bluue);
 }
 
@@ -112,6 +116,7 @@ nav ::selection {
     position: absolute;
     width: 240px;
     height: auto;
+    top: 47px;
     left: 50%;
     transform: translate(-50%);
     justify-content: center;
@@ -121,8 +126,7 @@ nav ::selection {
     background: white;
     padding: 40px 10px 0px 10px;
     border-radius: 0px 0px 5px 5px;
-    box-shadow: #000000 15px;
-    border-top: none;
+    transition: 4s ease-out;
 
 }
 
@@ -132,13 +136,12 @@ nav ::selection {
     letter-spacing: 3px;
     color: var(--bluue);
     font-family: "sans";
-    border: teal solid 1px;
     display: flex;
     justify-content: center;
     height: 45px;
     width: 100%;
     background: white;
-
+    border: 2px teal solid;
 }
 
 .reg-item a {
@@ -186,6 +189,74 @@ nav ::selection {
 
 .burger {
     display: none;
+}
+
+
+
+@media screen and (min-width:700px) {
+
+    .nav-item a::after,
+    .reg-item a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--bluue);
+        transition: width 0.4s;
+    }
+
+    .nav-item:hover a::after,
+    .reg-item:hover a::after {
+        width: 100%;
+    }
+
+
+
+    .zero-reg {
+        margin-top: 40px;
+    }
+
+    .reglage {
+        display: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .first:hover>.reglage {
+        display: flex;
+    }
+
+    #main {
+        display: none;
+        padding: 0;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        background: grey;
+    }
+
+    .language:hover #main {
+        display: flex;
+    }
+
+    .main {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .main a {
+        vertical-align: middle;
+    }
+
+    .main:hover {
+        width: 100%;
+        border-radius: 5px;
+    }
+
 }
 
 @media screen and (max-width:699px) {
@@ -338,72 +409,6 @@ nav ::selection {
     .language {
         background: transparent;
     }
-}
-
-@media screen and (min-width:700px) {
-
-    .nav-item>a::after,
-    .reg-item>a::after {
-        display: block;
-        content: "";
-        width: 0;
-        height: 1px;
-        background: var(--bluue);
-        transition: width 0.4s;
-    }
-
-    .nav-item:hover>a::after,
-    .nav-item:hover>a::after {
-        width: 100%;
-    }
-
-    .zero-reg a:hover>#main {
-        display: flex;
-        background: violet;
-    }
-
-    .zero-reg {
-        margin-top: 40px;
-    }
-
-    .reglage {
-        display: none;
-        border: 2px solid black;
-        padding: 0;
-        background: transparent;
-    }
-
-    .first:hover>.reglage {
-        display: flex;
-    }
-
-    #main {
-        display: flex;
-        padding: 0;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 50px;
-        background: grey;
-    }
-
-    .main {
-        display: block;
-        height: 30px;
-        width: 30px;
-        border-radius: 50px;
-        text-align: center;
-    }
-
-    .main a {
-        vertical-align: middle;
-    }
-
-    .main:hover {
-        width: 100%;
-        border-radius: 5px;
-    }
-
 }
 
 
