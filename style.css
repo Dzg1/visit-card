@@ -110,7 +110,6 @@ nav ::selection {
 }
 
 
-
 .reglage {
     position: absolute;
     width: 240px;
@@ -222,9 +221,7 @@ nav ::selection {
         width: 100%;
     }
 
-    .golang {
-        background: blue;
-    }
+
 
 
     .reglage {
@@ -238,7 +235,6 @@ nav ::selection {
     }
 
     #main {
-        position: absolute;
         display: none;
         padding: 0;
         align-items: center;
@@ -247,6 +243,10 @@ nav ::selection {
         height: 50px;
         background: rgb(121, 121, 121);
 
+    }
+
+    .toggle {
+        display: flex !important;
     }
 
 
