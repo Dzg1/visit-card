@@ -67,12 +67,13 @@ nav ::selection {
 .nav-list {
     padding: 7px 0;
     display: flex;
-    margin: 0;
-
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 0;
+    width: 400px;
 }
 
 .nav-item {
-    margin-right: 2rem;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 3px;
@@ -83,7 +84,7 @@ nav ::selection {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: auto;
 }
 
 .nav-item>a {
@@ -106,8 +107,6 @@ nav ::selection {
 
 .first {
     position: relative;
-    width: 100px;
-
 }
 
 
@@ -127,6 +126,8 @@ nav ::selection {
     padding: 40px 10px 0px 10px;
     border-radius: 0px 0px 5px 5px;
     transition: 4s ease-out;
+    border: teal solid 1px;
+
 
 }
 
@@ -141,7 +142,7 @@ nav ::selection {
     height: 45px;
     width: 100%;
     background: white;
-    border: 2px teal solid;
+
 }
 
 .reg-item a {
@@ -195,8 +196,7 @@ nav ::selection {
 
 @media screen and (min-width:700px) {
 
-    .nav-item a::after,
-    .reg-item a::after {
+    .anav::after {
         display: block;
         content: "";
         width: 0;
@@ -205,16 +205,27 @@ nav ::selection {
         transition: width 0.4s;
     }
 
-    .nav-item:hover a::after,
-    .reg-item:hover a::after {
+    .nav-item:hover .anav::after {
         width: 100%;
     }
 
-
-
-    .zero-reg {
-        margin-top: 40px;
+    .areg::after {
+        display: block;
+        content: "";
+        width: 0%;
+        height: 1px;
+        background: var(--bluue);
+        transition: width 0.4s;
     }
+
+    .reg-item:hover .areg::after {
+        width: 100%;
+    }
+
+    .golang {
+        background: blue;
+    }
+
 
     .reglage {
         display: none;
@@ -227,6 +238,7 @@ nav ::selection {
     }
 
     #main {
+        position: absolute;
         display: none;
         padding: 0;
         align-items: center;
@@ -234,11 +246,10 @@ nav ::selection {
         width: 100%;
         height: 50px;
         background: rgb(121, 121, 121);
+
     }
 
-    .language:hover #main {
-        display: flex;
-    }
+
 
     .main {
         display: block;

@@ -151,3 +151,12 @@ function activeLink() {
   this.classList.add("active");
 }
 list.forEach((item) => item.addEventListener("click", activeLink));
+
+function toggleLang() {
+  const language = document.querySelector(".zero-reg");
+  const main = document.querySelector("#main");
+  language.addEventListener("click", () => {
+    language.ClassList.toggle("golang");
+  });
+}
+toggleLang();
