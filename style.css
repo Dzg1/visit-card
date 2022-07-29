@@ -238,19 +238,17 @@ nav {
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        height: 50px;
-        background: rgb(121, 121, 121);
-        box-shadow: inset 0px 2px 5px 0px black;
+        background: rgb(173, 172, 172);
+        box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
 
-        transform: translatey(-100%);
+        height: 0px;
         transition: 5s linear ease-in-out;
 
     }
 
     .toggle {
         display: flex !important;
-        transform: translatey(0) !important;
-
+        height: 50px !important;
     }
 
 
@@ -276,6 +274,73 @@ nav {
 }
 
 @media screen and (max-width:699px) {
+
+
+    .anav::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--bluue);
+        transition: width 0.4s;
+    }
+
+    .nav-item:hover .anav::after {
+        width: 100%;
+    }
+
+    .areg::after {
+        display: block;
+        content: "";
+        width: 0%;
+        height: 1px;
+        background: var(--bluue);
+        transition: width 0.4s;
+    }
+
+    .reg-item:hover .areg::after {
+        width: 100%;
+    }
+
+
+
+
+    .reglage {
+        display: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .first:hover>.reglage {
+        display: flex;
+    }
+
+
+
+    .toggle {
+        display: flex !important;
+        height: 50px !important;
+    }
+
+
+
+
+    .main {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .main a {
+        vertical-align: middle;
+    }
+
+    .main:hover {
+        width: 100%;
+        border-radius: 5px;
+    }
 
     nav {
         z-index: 3;
@@ -401,13 +466,16 @@ nav {
     }
 
     #main {
-        flex-direction: row;
+        display: none;
         padding: 0;
-        position: initial;
-        padding-left: 10px;
-        height: 50px;
+        align-items: center;
+        justify-content: space-around;
         width: 100%;
-        background: grey;
+        background: rgb(173, 172, 172);
+        box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+
+        height: 0px;
+        transition: 5s linear ease-in-out;
     }
 
     .main {
