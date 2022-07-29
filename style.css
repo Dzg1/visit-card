@@ -131,7 +131,7 @@ nav {
 
 
 #main {
-    display: none;
+    display: flex;
     padding: 0;
     align-items: center;
     justify-content: space-around;
@@ -143,7 +143,6 @@ nav {
 }
 
 .toggle {
-    display: flex !important;
     height: 50px !important;
 }
 
