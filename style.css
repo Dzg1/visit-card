@@ -124,8 +124,6 @@ nav {
     border-radius: 0px 0px 5px 5px;
     transition: 4s ease-out;
     border: teal solid 1px;
-
-
 }
 
 
@@ -138,13 +136,17 @@ nav {
     width: 100%;
     background: rgb(173, 172, 172);
     box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
-    transition: all 2s linear ease-in-out;
     height: 0px;
+    transition: .4s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
 }
 
-.toggle {
-    height: 50px !important;
+#main.toggle {
+    height: 50px;
+    opacity: 1;
 }
+
 
 
 .reg-item {
@@ -185,7 +187,7 @@ nav {
 }
 
 #l1 {
-    background: url(./objet/ukflag.jpg) center;
+    background: url(./objet/ukflag.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -256,10 +258,12 @@ nav {
 
     .main {
         display: block;
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         border-radius: 50px;
         text-align: center;
+        transition: .4s linear;
+        overflow: hidden;
     }
 
     .main a {
@@ -267,8 +271,10 @@ nav {
     }
 
     .main:hover {
-        width: 100%;
-        border-radius: 5px;
+        width: 200%;
+        height: 50px;
+        border-radius: 15px;
+
     }
 
 }
