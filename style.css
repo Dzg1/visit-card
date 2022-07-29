@@ -128,6 +128,26 @@ nav {
 
 }
 
+
+
+#main {
+    display: none;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(173, 172, 172);
+    box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+    transition: all 2s linear ease-in-out;
+    height: 0px;
+}
+
+.toggle {
+    display: flex !important;
+    height: 50px !important;
+}
+
+
 .reg-item {
     font-weight: 600;
     font-size: 15px;
@@ -230,25 +250,6 @@ nav {
 
     .first:hover>.reglage {
         display: flex;
-    }
-
-    #main {
-        display: none;
-        padding: 0;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        background: rgb(173, 172, 172);
-        box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
-
-        height: 0px;
-        transition: 5s linear ease-in-out;
-
-    }
-
-    .toggle {
-        display: flex !important;
-        height: 50px !important;
     }
 
 
