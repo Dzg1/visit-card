@@ -361,6 +361,7 @@ nav {
     .nav-list {
         display: flex;
         flex-direction: column;
+        justify-content: start;
         width: 0%;
         height: 100vh;
         position: absolute;
