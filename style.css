@@ -182,9 +182,6 @@ nav {
 }
 
 
-.main a {
-    color: white;
-}
 
 #l1 {
     background: url(./objet/ukflag.jpg) no-repeat center;
@@ -362,11 +359,12 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: start;
+        align-items: baseline;
         width: 0%;
         height: 100vh;
         position: absolute;
         top: 70px;
-        right: 0px;
+        right: -40px;
         background: white;
         transition: all .4s ease-in-out;
         z-index: 2;
@@ -378,7 +376,8 @@ nav {
     }
 
     .nav-item {
-        transform: translateX(110%);
+        transform: translateX(0%);
+
     }
 
     .show-nav .nav-item {
@@ -468,9 +467,7 @@ nav {
         transition: 1.2s ease-out;
     }
 
-    .first {
-        width: 100%;
-    }
+
 
     #main {
         display: none;
@@ -480,7 +477,6 @@ nav {
         width: 100%;
         background: rgb(173, 172, 172);
         box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
-
         height: 0px;
         transition: 5s linear ease-in-out;
     }
