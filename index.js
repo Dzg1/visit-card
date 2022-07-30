@@ -156,9 +156,6 @@ const areg = document.querySelector(".areg");
 console.log(areg);
 const main = document.querySelector("#main");
 console.log(main);
-const bubble = document.querySelectorAll(".main");
-console.log(bubble);
 areg.addEventListener("click", () => {
   main.classList.toggle("toggle");
-  bubble.classList.toggle("bubble-toggle");
 });
