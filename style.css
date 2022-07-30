@@ -109,12 +109,10 @@ nav {
 
 
 .reglage {
-    position: absolute;
     width: 240px;
     height: auto;
     top: 47px;
     left: 50%;
-    transform: translate(-50%);
     justify-content: center;
     text-align: center;
     display: flex;
@@ -122,7 +120,6 @@ nav {
     background: white;
     padding: 40px 10px 0px 10px;
     border-radius: 0px 0px 5px 5px;
-    transition: 4s ease-out;
     border: teal solid 1px;
 }
 
@@ -241,9 +238,12 @@ nav {
 
 
     .reglage {
+        position: absolute;
         display: none;
         padding: 0;
         background: transparent;
+        transform: translate(-50%);
+
     }
 
     .first:hover>.reglage {
@@ -309,13 +309,22 @@ nav {
 
 
     .reglage {
-        display: none;
+
+        display: flex;
         padding: 0;
         background: transparent;
+        overflow: hidden;
+        transition: .4s ease-out;
+        height: 100px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
     }
 
     .first:hover>.reglage {
-        display: flex;
+        height: 130px;
     }
 
 
@@ -372,7 +381,7 @@ nav {
     }
 
     .show-nav .nav-list {
-        width: 100%;
+        width: 45%;
     }
 
     .nav-item {
