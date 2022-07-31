@@ -81,7 +81,6 @@ nav {
     width: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: auto;
 }
 
@@ -142,6 +141,16 @@ nav {
 #main.toggle {
     height: 50px;
     opacity: 1;
+}
+
+.main {
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    text-align: center;
+    transition: .4s linear;
+    overflow: hidden;
 }
 
 
@@ -234,7 +243,9 @@ nav {
         width: 100%;
     }
 
-
+    .nav-item {
+        align-items: center;
+    }
 
 
     .reglage {
@@ -253,15 +264,7 @@ nav {
 
 
 
-    .main {
-        display: block;
-        height: 35px;
-        width: 35px;
-        border-radius: 50px;
-        text-align: center;
-        transition: .4s linear;
-        overflow: hidden;
-    }
+
 
     .main a {
         vertical-align: middle;
@@ -315,12 +318,16 @@ nav {
         background: transparent;
         overflow: hidden;
         transition: .4s ease-out;
-        height: 100px;
+        height: 0px;
+        border: none;
+
     }
 
     .first {
         display: flex;
         flex-direction: column;
+
+        height: auto;
     }
 
     .first:hover>.reglage {
@@ -334,16 +341,11 @@ nav {
         height: 50px !important;
     }
 
-
-
-
-    .main {
-        display: block;
-        height: 30px;
-        width: 30px;
-        border-radius: 50px;
-        text-align: center;
+    .menu {
+        width: 160px !important;
     }
+
+
 
     .main a {
         vertical-align: middle;
