@@ -375,10 +375,11 @@ nav {
         height: 100vh;
         position: absolute;
         top: 70px;
-        right: -40px;
+        left: 0px;
         background: white;
         transition: all .4s ease-in-out;
         z-index: 2;
+        overflow: hidden;
 
     }
 
@@ -387,7 +388,7 @@ nav {
     }
 
     .nav-item {
-        transform: translateX(0%);
+        transform: translateX(250px);
 
     }
 
@@ -471,11 +472,11 @@ nav {
     }
 
     .show-nav .first {
-        transition: 1.1s ease-out;
+        transition: 1s .2s ease-out;
     }
 
     .show-nav .second {
-        transition: 1.2s ease-out;
+        transition: 1s .4 s ease-out;
     }
 
 
@@ -493,15 +494,16 @@ nav {
     }
 
     .main {
+        display: flex;
+        height: 35px;
+        width: 35px;
         margin: 5px;
         transform: translate(0px);
-        width: auto;
-        height: 50px;
-        padding: 7;
+        padding: 7px;
     }
 
     .main:hover {
-        transform: scale(1.3);
+        width: 100%;
     }
 
     .language {
