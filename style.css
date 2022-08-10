@@ -319,7 +319,9 @@ nav {
         overflow: hidden;
         transition: .4s ease-out;
         height: 0px;
+        width: 100%;
         border: none;
+        margin: 0%;
 
     }
 
@@ -380,7 +382,7 @@ nav {
         transition: all .4s ease-in-out;
         z-index: 2;
         overflow: hidden;
-
+        margin: 0px;
     }
 
     .show-nav .nav-list {
@@ -1172,7 +1174,7 @@ h2 {
     padding-top: 20px;
     height: auto;
     background: teal;
-    clip-path: ellipse(93% 100% at 31.08% 100%);
+    clip-path: ellipse(93% 100% at 50% 100%);
     position: relative;
     text-align: center;
     padding-bottom: 30px;
@@ -1188,6 +1190,7 @@ h2 {
     position: absolute;
     clip-path: ellipse(72% 100% at 72% 100%);
     bottom: -430px;
+    border-top: 2px var(--bluue) solid;
 }
 
 
