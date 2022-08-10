@@ -1190,7 +1190,6 @@ h2 {
     position: absolute;
     clip-path: ellipse(72% 100% at 72% 100%);
     bottom: -430px;
-    border-top: 2px var(--bluue) solid;
 }
 
 
