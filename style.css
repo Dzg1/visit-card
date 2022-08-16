@@ -1449,7 +1449,7 @@ h2 {
     z-index: 1;
 }
 
-.list a {
+.lista {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1460,7 +1460,7 @@ h2 {
     font-weight: 500;
 }
 
-.list a .icon {
+.lista .icon {
     position: relative;
     display: block;
     line-height: 75px;
