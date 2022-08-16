@@ -159,3 +159,9 @@ console.log(main);
 areg.addEventListener("click", () => {
   main.classList.toggle("toggle");
 });
+
+let tel = document.querySelector(".tel");
+console.log(tel);
+tel.addEventListener("click", () => {
+  navigator.clipboard.writeText("0764013766");
+});

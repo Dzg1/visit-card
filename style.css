@@ -1483,6 +1483,7 @@ h2 {
     transition: 0.5s;
     opacity: 0;
     transform: translateY(20px);
+    cursor: pointer;
 }
 
 .list.active .text {
