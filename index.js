@@ -165,8 +165,8 @@ console.log(tel);
 tel.addEventListener("click", () => {
   navigator.clipboard.writeText("0764013766");
 });
-let lista = document.querySelector(".lista");
-console.log(lista);
-lista.addEventListener("click", () => {
+let mail = document.querySelector(".mail");
+console.log(mail);
+mail.addEventListener("click", () => {
   navigator.clipboard.writeText("dzg.contact2022@gmail.com");
 });
