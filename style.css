@@ -1488,7 +1488,7 @@ h2 {
 
 .list.active .text {
     opacity: 1;
-    transform: translateY(20px);
+    transform: translateY(15px);
 }
 
 .indicator {
