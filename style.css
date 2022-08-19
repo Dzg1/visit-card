@@ -1460,19 +1460,27 @@ h2 {
     font-weight: 500;
 }
 
-.mainCard {
+.telMainCard {
     position: relative;
     width: 70px;
     height: 70px;
 }
 
-.bubbleCard {
+.telBubbleCard {
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1s ease;
 }
+
+.mailMainCard {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+
 
 .icon {
     position: absolute;
@@ -1482,7 +1490,7 @@ h2 {
     font-weight: 500;
 }
 
-.copied {
+.telCopied {
     position: absolute;
     backface-visibility: hidden;
     width: 100%;
@@ -1495,9 +1503,22 @@ h2 {
 
 }
 
-.bubbleCard:hover {
-    transform: rotateY(180deg);
+
+
+.mailCopied {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotateY(180deg);
+    color: teal;
+
+
 }
+
+
 
 .lista .icon {
 
@@ -1597,4 +1618,7 @@ h2 {
     }
 }
 
-.icon {}
+.copied {
+    animation: copied 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    background: blue;
+}

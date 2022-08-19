@@ -159,14 +159,17 @@ console.log(main);
 areg.addEventListener("click", () => {
   main.classList.toggle("toggle");
 });
-let bubbleCard = document.querySelector(".bubbleCard");
+let tbc = document.querySelector(".telBubbleCard");
+let mbc = document.querySelector(".mailBubbleCard");
 let tel = document.querySelector(".tel");
-console.log(bubbleCard);
+
 tel.addEventListener("click", () => {
   navigator.clipboard.writeText("0764013766");
+  tbc.classList.toggle("copied");
 });
 let mail = document.querySelector(".mail");
 console.log(mail);
 mail.addEventListener("click", () => {
   navigator.clipboard.writeText("dzg.contact2022@gmail.com");
+  tbc.classList.toggle("copied");
 });
