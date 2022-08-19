@@ -159,9 +159,9 @@ console.log(main);
 areg.addEventListener("click", () => {
   main.classList.toggle("toggle");
 });
-
+let bubbleCard = document.querySelector(".bubbleCard");
 let tel = document.querySelector(".tel");
-console.log(tel);
+console.log(bubbleCard);
 tel.addEventListener("click", () => {
   navigator.clipboard.writeText("0764013766");
 });
