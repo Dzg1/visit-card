@@ -171,5 +171,5 @@ let mail = document.querySelector(".mail");
 console.log(mail);
 mail.addEventListener("click", () => {
   navigator.clipboard.writeText("dzg.contact2022@gmail.com");
-  tbc.classList.toggle("copied");
+  mbc.classList.toggle("copied");
 });
