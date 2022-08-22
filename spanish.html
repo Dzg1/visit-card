@@ -15,21 +15,26 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="nav-name"><a href="#">DzG</a></div>
         <ul class="nav-list">
-            <li id="menu" class="nav-item"><a>Language</a>
-                <ul id="main">
-                    <li class="main" id="l1"><a href="./english.html">EN</a></li>
-                    <li class="main" id="l2"><a href="./index.html">FR</a></li>
-                    <li class= "main" id="l3"><a href="./deutsh.html">DE</a></li>
-                    <li class="main" id="l4"><a href="./spanish.html">SP</a></li>
+            <li class="nav-item zero"><a class="anav" href="#">Accueil</a></li>
+            <li class="nav-item first"><a class="anav menu">reglage</a>
+                <ul class="reglage">
+                    <li class="reg-item zero-reg"><a class="areg">Language</a></li>
+                    <ul id="main">
+                        <li class="main" id="l1"><a href="./english.html"></a></li>
+                        <li class="main" id="l2"><a href="./index.html"></a></li>
+                        <li class="main" id="l3"><a href="./deutsh.html"></a></li>
+                        <li class="main" id="l4"><a href="./spanish.html"></a></li>
+                    </ul>
+                    <li class="reg-item first-reg"><a  class="areg">Dark mode</a></li>
                 </ul>
-            </li>
-            <li class="nav-item "><a href="./contact.php">Me contacter</a></li>
+                </li>
+            <li class="nav-item second"><a class="anav" href="#contact">Me contacter</a></li>
         </ul>
         <button class="burger">
-            <span class="bar">ok</span>
+            <span class="bar"></span>
         </button>
     </nav>
     <div id="bandeau">
@@ -52,8 +57,9 @@
 
         </div>
     </div>
+    <div class="banniere"></div>
     <div class="title">
-        <div id="reseaux">
+        <!-- <div id="reseaux">
             <h2 id="reseauxtitle"> <span id="spanh2">Suivez moi sur mes réseaux sociaux</span></h2>
             <ul>
                 <div id="icon">
@@ -73,7 +79,7 @@
                             <span id="spanrso5" class="spanrso">Suivez moi sur Twitter</span></a></li>
                 </div>
             </ul>
-        </div>
+        </div>-->
 
 
         <div id="logotitle">
@@ -84,7 +90,7 @@
         <div id="description">
             <h2 id="descriptiontitle">Bonjour le monde !! </h2>
             <span>Je suis DzG <br>Un apprenti développeur. <br>Je travail avec <span class="typing"></span>
-                <br>N'hesitez pas a faire appelle à moi! </span>
+                <br>N'hesitez pas à faire appel à moi! </span>
         </div>
     </div>
 
@@ -99,7 +105,7 @@
             nisi facere iusto rerum totam cupiditate velit dignissimos? <br> Enim, delectus nesciunt. Voluptatum
             sapiente possi alet ametmus perferendis in sunt illo aliquid natus neque ullam. <br> accusantium veniam
             molestias,
-            maxime laborum quod reiciendis praesentium impedit, eum voluptates. </p>
+            maxime laborum quod reiciendis praesentium impedit, eum voluptates.alea jacta est </p>
 
 
         <div id="backgroundpresentation"></div>
@@ -146,8 +152,78 @@
             <button id="sub" type="submit">🚀</button>
             <div id="support"><img id="merci" src="./objet/merci/merci.png" alt="Merci"></div>
         </form>
+        <div class="main-navigation">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <div class="lista">
+                            <div class="mepmain">
+                                <div class="mepbubble">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+                            <span class="text">Accueil</span>
+                        </div>
+                    </li>
+                    <li class="list ">
+                        <div class="lista">
+                            <div class="telMainCard">
+                            <div class="telBubbleCard">
+                            <span class="icon">
+        <ion-icon name="call-outline"></ion-icon>
+                                </span>
+                                <span class="telCopied">Copié</span>
+                            </div>
+                        </div>
+                            <span class="text tel"><ion-icon name="cut-outline"></ion-icon>07.64.01.37.66</span>
+                        </div>
+                    </li>
+                    <li class="list">
+                       <div class="lista">
+                        <div class="mailMainCard">
+                        <div class="mailBubbleCard">
+                            <span class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </span>
+                            <span class="mailCopied">Copié</span>
+                        </div>
+                    </div>
+                            <span class="text mail"><ion-icon name="cut-outline"></ion-icon>dzg.contact2022@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="lista">
+                            <div class="mepmain">
+                                <div class="mepbubble">
+                            <span class="icon">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </span>
+                        </div>
+                    </div>
+                            <a href="www.https://github.com/Dzg1" class="text">Github</a>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="lista">
+                            <div class="mepmain">
+                                <div class="mepbubble">
+                            <span class="icon">
+                                <ion-icon name="logo-twitter"></ion-icon>  
+                             </span>
+                            </div>
+                            </div>
+                            <span class="text">twitter</span>
+                        </div>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
     </div>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
