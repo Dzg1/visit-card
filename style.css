@@ -78,9 +78,8 @@ nav {
     color: var(--bluue);
     font-family: "sans";
     height: 60px;
-    width: 150px;
+    width: 100% !important;
     display: flex;
-    justify-content: center;
     width: auto;
 }
 
@@ -383,6 +382,8 @@ nav {
         z-index: 2;
         overflow: hidden;
         margin: 0px;
+        box-shadow: 5px -10px 10px 0px rgba(0, 0, 0, 0.4);
+
     }
 
     .show-nav .nav-list {
@@ -405,7 +406,7 @@ nav {
         transition: all 0.4s ease-in-out;
     }
 
-    .nav-item>a:hover {
+    .anav:hover {
         padding-left: 2rem;
         letter-spacing: 5px;
     }
@@ -478,7 +479,7 @@ nav {
     }
 
     .show-nav .second {
-        transition: 1s .4 s ease-out;
+        transition: 1s .4s ease-out;
     }
 
 
@@ -499,13 +500,14 @@ nav {
         display: flex;
         height: 35px;
         width: 35px;
-        margin: 5px;
+        margin: 2px;
         transform: translate(0px);
         padding: 7px;
     }
 
     .main:hover {
-        width: 150%;
+        width: 80%;
+        border-radius: 15px;
     }
 
     .language {
@@ -1048,6 +1050,7 @@ h2 {
     margin-top: 80px;
     border-radius: 200px;
     cursor: pointer;
+    padding: 10px;
 }
 
 
