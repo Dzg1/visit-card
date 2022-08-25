@@ -150,6 +150,7 @@ nav {
     text-align: center;
     transition: .4s linear;
     overflow: hidden;
+
 }
 
 
@@ -186,7 +187,9 @@ nav {
     position: relative;
 }
 
-
+.main a {
+    color: transparent;
+}
 
 #l1 {
     background: url(./objet/ukflag.jpg) no-repeat center;
@@ -270,12 +273,14 @@ nav {
     }
 
     .main:hover {
-        width: 200%;
-        height: 50px;
+        width: 80%;
         border-radius: 15px;
-
+        background: white !important;
     }
 
+    .main:hover a {
+        color: black;
+    }
 }
 
 @media screen and (max-width:699px) {
@@ -355,6 +360,11 @@ nav {
     .main:hover {
         width: 100%;
         border-radius: 5px;
+        background: white !important;
+    }
+
+    .main:hover a {
+        color: black;
     }
 
     nav {
@@ -382,7 +392,7 @@ nav {
         z-index: 2;
         overflow: hidden;
         margin: 0px;
-        box-shadow: 5px -10px 10px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 5px 9px 10px 0px rgba(0, 0, 0, 0.4);
 
     }
 
@@ -494,6 +504,7 @@ nav {
         box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
         height: 0px;
         transition: 5s linear ease-in-out;
+        text-align: center;
     }
 
     .main {
@@ -503,11 +514,14 @@ nav {
         margin: 2px;
         transform: translate(0px);
         padding: 7px;
+        color: black;
+
     }
 
     .main:hover {
         width: 80%;
         border-radius: 15px;
+
     }
 
     .language {
