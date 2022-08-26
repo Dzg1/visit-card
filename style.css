@@ -143,11 +143,12 @@ nav {
 }
 
 .main {
-    display: block;
+    display: flex;
     height: 35px;
     width: 35px;
     border-radius: 50px;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     transition: .4s linear;
     overflow: hidden;
 
@@ -276,6 +277,8 @@ nav {
         width: 80%;
         border-radius: 15px;
         background: white !important;
+        border: 2px solid var(--bluue);
+        box-shadow: 0px 0px 15px 3px rgba(57, 167, 218, 0.9), inset 0px 0px 7px 1px rgba(57, 167, 218, 0.9);
     }
 
     .main:hover a {
@@ -358,9 +361,11 @@ nav {
     }
 
     .main:hover {
-        width: 100%;
-        border-radius: 5px;
+        width: 80%;
+        border-radius: 15px;
         background: white !important;
+        border: 2px solid var(--bluue);
+        box-shadow: 0px 0px 15px 3px rgba(57, 167, 218, 0.9), inset 0px 0px 7px 1px rgba(57, 167, 218, 0.9);
     }
 
     .main:hover a {
@@ -504,7 +509,7 @@ nav {
         box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
         height: 0px;
         transition: 5s linear ease-in-out;
-        text-align: center;
+
     }
 
     .main {
@@ -515,14 +520,11 @@ nav {
         transform: translate(0px);
         padding: 7px;
         color: black;
-
+        align-items: center;
+        justify-content: center;
     }
 
-    .main:hover {
-        width: 80%;
-        border-radius: 15px;
 
-    }
 
     .language {
         background: transparent;
