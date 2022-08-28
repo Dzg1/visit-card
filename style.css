@@ -279,7 +279,6 @@ nav {
         background: white !important;
         border: 2px solid var(--bluue);
         box-shadow: 0px 0px 15px 3px rgba(57, 167, 218, 0.9), inset 0px 0px 7px 1px rgba(57, 167, 218, 0.9);
-        transform: scale(1.5)
     }
 
     .main:hover a {
