@@ -18,17 +18,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
 
 
-
+:root {
+    --greeen: #1fe07c;
+    --bluue: rgb(57, 166, 218);
+    --bluesoft: #67dec8;
+    --ecriture: #f1f1f1;
+    --fond: #262626;
+}
 
 * {
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    --greeen: #1fe07c;
-    --bluue: rgb(57, 166, 218);
-    --bluesoft: #67dec8;
-    --randomx: 10px;
-    --randomy: 10px;
     -webkit-user-select: none;
 }
 
@@ -43,7 +44,8 @@ body {
 
 nav {
 
-    background: white;
+    background: var(--fond);
+    ;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
     height: 70px;
     width: 100%;
@@ -86,7 +88,8 @@ nav {
 .nav-item>a {
     cursor: pointer;
     letter-spacing: 3px;
-    color: black;
+    color: var(--ecriture);
+    ;
     font-family: "sans";
     width: auto;
 }
@@ -115,7 +118,8 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--fond);
+    ;
     padding: 40px 10px 0px 10px;
     border-radius: 0px 0px 5px 5px;
     border: teal solid 1px;
@@ -166,14 +170,16 @@ nav {
     justify-content: center;
     height: 45px;
     width: 100%;
-    background: white;
+    background: var(--fond);
+    ;
 
 }
 
 .reg-item a {
     cursor: pointer;
     letter-spacing: 3px;
-    color: black;
+    color: var(--ecriture);
+    ;
     font-family: "sans";
     margin: auto;
 
@@ -299,13 +305,14 @@ nav {
     .main:hover {
         width: 80%;
         border-radius: 15px;
-        background: white !important;
+        background: var(--fond) !important;
         border: 2px solid var(--bluue);
         box-shadow: 0px 0px 15px 3px rgba(57, 167, 218, 0.9), inset 0px 0px 7px 1px rgba(57, 167, 218, 0.9);
     }
 
     .main:hover a {
-        color: black;
+        color: var(--ecriture);
+        ;
     }
 }
 
@@ -386,13 +393,14 @@ nav {
     .main:hover {
         width: 80%;
         border-radius: 15px;
-        background: white !important;
+        background: var(--fond) !important;
         border: 2px solid var(--bluue);
         box-shadow: 0px 0px 15px 3px rgba(57, 167, 218, 0.9), inset 0px 0px 7px 1px rgba(57, 167, 218, 0.9);
     }
 
     .main:hover a {
-        color: black;
+        color: var(--ecriture);
+        ;
     }
 
     nav {
@@ -415,7 +423,8 @@ nav {
         position: absolute;
         top: 70px;
         left: 0px;
-        background: white;
+        background: var(--fond);
+        ;
         transition: all .4s ease-in-out;
         z-index: 2;
         overflow: hidden;
@@ -540,7 +549,8 @@ nav {
         margin: 2px;
         transform: translate(0px);
         padding: 7px;
-        color: black;
+        color: var(--ecriture);
+        ;
         align-items: center;
         justify-content: center;
 
@@ -610,7 +620,8 @@ nav {
 /***************/
 .title {
 
-    background: white;
+    background: var(--fond);
+    ;
     margin-top: 95px;
     margin-bottom: 900px;
     width: 100%;
@@ -649,7 +660,7 @@ nav {
     height: 500px;
     width: 380px;
     padding-top: 100px;
-
+    color: var(--ecriture);
 }
 
 
@@ -663,7 +674,8 @@ h2 {
 #spanh2 {
     font-family: "title";
     font-weight: 500;
-    color: black;
+    color: var(--ecriture);
+    ;
     text-transform: uppercase;
 
 }
@@ -684,7 +696,7 @@ h2 {
 }
 
 #spanrso1 {
-    color: black;
+    color: var(--ecriture);;
 }
 
 #spanrso2 {
@@ -911,7 +923,8 @@ h2 {
 #descriptiontitle {
     font-family: "title";
     font-weight: 500;
-    color: black;
+    color: var(--ecriture);
+    ;
 
 }
 
@@ -1025,6 +1038,7 @@ h2 {
 #thepresentation {
 
     background: linear-gradient(313deg, var(--bluesoft) 0%, var(--bluue) 50%, teal 85%);
+    color: var(--ecriture);
     padding-top: 40px;
     clip-path: ellipse(111% 100% at 75.62% 100%);
     text-align: center;
@@ -1045,6 +1059,7 @@ h2 {
 
 #presentation {
     font-family: "sans";
+    color: var(--ecriture);
     margin-top: 30px;
     margin-bottom: 50px;
 
@@ -1071,6 +1086,7 @@ h2 {
     font-family: "title";
     font-weight: 500;
     text-align: center;
+    color: var(--ecriture);
 }
 
 #cards {
@@ -1090,6 +1106,7 @@ h2 {
     border-radius: 200px;
     cursor: pointer;
     padding: 10px;
+    color: var(--ecriture);
 }
 
 
@@ -1101,12 +1118,12 @@ h2 {
 
 }
 
-#c1:hover {
+/* #c1:hover {
     background: linear-gradient(215deg, #dadada, #ffffff);
     box-shadow: -10px 10px 10px #c6c6c6,
         10px -10px 10px rgb(245, 245, 245);
 
-}
+} */
 
 .c1clicked {
     background: rgb(235, 235, 235) !important;
@@ -1120,11 +1137,11 @@ h2 {
         0px -10px 10px rgb(245, 245, 245);
 }
 
-#c2:hover {
+/* #c2:hover {
     background: linear-gradient(180deg, #dadada, #ffffff);
     box-shadow: 0px 10px 10px #c6c6c6,
         0px -10px 10px rgb(245, 245, 245);
-}
+} */
 
 .c2clicked {
     background: rgb(235, 235, 235) !important;
@@ -1138,11 +1155,11 @@ h2 {
         -10px -10px 10px rgb(245, 245, 245);
 }
 
-#c3:hover {
+/* #c3:hover {
     background: linear-gradient(145deg, rgb(218, 218, 218), rgb(255, 255, 255));
     box-shadow: 10px 10px 10px rgb(198, 198, 198),
         -10px -10px 10px rgb(245, 245, 245);
-}
+} */
 
 .c3clicked {
     background: rgb(235, 235, 235) !important;
@@ -1213,6 +1230,7 @@ h2 {
 /*******************/
 
 #contact {
+    color: var(--ecriture);
     padding-top: 20px;
     height: auto;
     background: teal;
@@ -1471,7 +1489,8 @@ h2 {
     position: relative;
     width: 400px;
     height: 70px;
-    background: white;
+    background: var(--fond);
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1650,7 +1669,8 @@ h2 {
     left: -23px;
     width: 20px;
     height: 20px;
-    background: white;
+    background: var(--fond);
+    ;
     border-top-right-radius: 50px;
     box-shadow: 0 -10px 0 0 teal;
 }
@@ -1662,7 +1682,8 @@ h2 {
     left: 61px;
     width: 20px;
     height: 20px;
-    background: white;
+    background: var(--fond);
+    ;
     border-top-left-radius: 50px;
     box-shadow: 0 -10px 0 0 teal;
 }
