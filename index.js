@@ -152,12 +152,19 @@ function activeLink() {
 }
 list.forEach((item) => item.addEventListener("click", activeLink));
 
-const areg = document.querySelector(".areg");
-console.log(areg);
+const areg1 = document.querySelector(".areg1");
+console.log(areg1);
 const main = document.querySelector("#main");
 console.log(main);
-areg.addEventListener("click", () => {
+areg1.addEventListener("click", () => {
   main.classList.toggle("toggle");
+});
+const dmm = document.querySelector(".dmm");
+console.log(dmm);
+const areg2 = document.querySelector(".areg2");
+console.log(areg2);
+areg2.addEventListener("click", () => {
+  dmm.classList.toggle("toggle2");
 });
 let tbc = document.querySelector(".telBubbleCard");
 let mbc = document.querySelector(".mailBubbleCard");
@@ -168,7 +175,6 @@ tel.addEventListener("click", () => {
   tbc.classList.toggle("copied");
 });
 let mail = document.querySelector(".mail");
-console.log(mail);
 mail.addEventListener("click", () => {
   navigator.clipboard.writeText("dzg.contact2022@gmail.com");
   mbc.classList.toggle("copied");
