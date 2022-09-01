@@ -24,6 +24,7 @@
     --bluesoft: #67dec8;
     --ecriture: #f1f1f1;
     --fond: #262626;
+    --fond2: #dcdcdc;
 }
 
 * {
@@ -1043,7 +1044,6 @@ h2 {
     clip-path: ellipse(111% 100% at 75.62% 100%);
     text-align: center;
     padding-bottom: 60px;
-
 }
 
 
@@ -1051,10 +1051,9 @@ h2 {
 #curvecard {
     height: 200px;
     width: 100%;
-    background: rgb(235, 235, 235);
+    background: var(--fond2);
     clip-path: ellipse(111% 100% at 75.62% 100%);
     position: absolute;
-
 }
 
 #presentation {
@@ -1062,13 +1061,12 @@ h2 {
     color: var(--ecriture);
     margin-top: 30px;
     margin-bottom: 50px;
-
 }
 
 /**********card************/
 
 .card {
-    background: rgb(235, 235, 235);
+    background: var(--fond2);
     text-align: center;
     vertical-align: middle;
     margin: 0;
@@ -1112,9 +1110,9 @@ h2 {
 
 
 #c1 {
-    background: linear-gradient(215deg, rgb(245, 245, 245), rgb(218, 218, 218));
+    background: linear-gradient(215deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: -10px 10px 10px rgb(198, 198, 198),
-        10px -10px 10px rgb(245, 245, 245);
+        0px -10px 10px rgb(232, 232, 232);
 
 }
 
@@ -1126,15 +1124,15 @@ h2 {
 } */
 
 .c1clicked {
-    background: rgb(235, 235, 235) !important;
-    box-shadow: inset -19px 19px 19px rgb(189, 189, 189), inset 19px -19px 19px rgb(255, 255, 255), -10px 10px 10px rgb(198, 198, 198),
-        10px -10px 10px rgb(245, 245, 245) !important;
+    background: var(--fond2) !important;
+    box-shadow: inset -19px 19px 19px rgb(198, 198, 198), inset 19px -19px 19px rgb(235, 235, 235), -10px 10px 10px rgb(198, 198, 198),
+        0px -10px 10px rgb(232, 232, 232) !important;
 }
 
 #c2 {
-    background: linear-gradient(180deg, rgb(245, 245, 245), rgb(218, 218, 218));
+    background: linear-gradient(180deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 0px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(245, 245, 245);
+        0px -10px 10px rgb(232, 232, 232);
 }
 
 /* #c2:hover {
@@ -1144,15 +1142,15 @@ h2 {
 } */
 
 .c2clicked {
-    background: rgb(235, 235, 235) !important;
-    box-shadow: inset 0px 19px 19px rgb(189, 189, 189), inset 0px -19px 19px rgb(255, 255, 255), 0px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(245, 245, 245) !important;
+    background: var(--fond2) !important;
+    box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
+        0px -10px 10px rgb(232, 232, 232) !important;
 }
 
 #c3 {
-    background: linear-gradient(145deg, rgb(245, 245, 245), rgb(218, 218, 218));
+    background: linear-gradient(145deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 10px 10px 10px rgb(198, 198, 198),
-        -10px -10px 10px rgb(245, 245, 245);
+        -0px -10px 10px rgb(232, 232, 232);
 }
 
 /* #c3:hover {
@@ -1162,9 +1160,9 @@ h2 {
 } */
 
 .c3clicked {
-    background: rgb(235, 235, 235) !important;
-    box-shadow: inset 19px 19px 19px rgb(189, 189, 189), inset -19px -19px 19px rgb(255, 255, 255), 10px 10px 10px rgb(198, 198, 198),
-        -10px -10px 10px rgb(245, 245, 245) !important;
+    background: var(--fond2) !important;
+    box-shadow: inset 19px 19px 19px rgb(198, 198, 198), inset -19px -19px 19px rgb(235, 235, 235), 10px 10px 10px rgb(198, 198, 198),
+        -0px -10px 10px rgb(232, 232, 232) !important;
 }
 
 .pc {
@@ -1197,33 +1195,33 @@ h2 {
     }
 
     .c123 {
-        background: linear-gradient(180deg, rgb(245, 245, 245), rgb(218, 218, 218)) !important;
+        background: linear-gradient(180deg, rgb(230, 230, 230), rgb(208, 208, 208)) !important;
         box-shadow: 0px 10px 10px rgb(198, 198, 198),
-            0px -10px 10px rgb(245, 245, 245) !important;
+            0px -10px 10px rgb(232, 232, 232) !important;
     }
 
-    .c123:hover {
+    /* .c123:hover {
         background: linear-gradient(180deg, #dadada, #ffffff);
         box-shadow: 0px 10px 10px #c6c6c6,
             0px -10px 10px rgb(245, 245, 245);
-    }
+    } */
 
     .c1clicked {
-        background: rgb(235, 235, 235) !important;
-        box-shadow: inset 0px 19px 19px rgb(189, 189, 189), inset 0px -19px 19px rgb(255, 255, 255), 0px 10px 10px rgb(198, 198, 198),
-            0px -10px 10px rgb(245, 245, 245) !important;
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
+            0px -10px 10px rgb(232, 232, 232) !important;
     }
 
     .c2clicked {
-        background: rgb(235, 235, 235) !important;
-        box-shadow: inset 0px 19px 19px rgb(189, 189, 189), inset 0px -19px 19px rgb(255, 255, 255), 0px 10px 10px rgb(198, 198, 198),
-            0px -10px 10px rgb(245, 245, 245) !important;
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
+            0px -10px 10px rgb(232, 232, 232) !important;
     }
 
     .c3clicked {
-        background: rgb(235, 235, 235) !important;
-        box-shadow: inset 0px 19px 19px rgb(189, 189, 189), inset 0px -19px 19px rgb(255, 255, 255), 0px 10px 10px rgb(198, 198, 198),
-            0px -10px 10px rgb(245, 245, 245) !important;
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
+            0px -10px 10px rgb(232, 232, 232) !important;
     }
 }
 
@@ -1254,7 +1252,7 @@ h2 {
 
 
 #backgroundcontact {
-    background: rgb(235, 235, 235);
+    background: var(--fond2);
     width: 100%;
     height: 300px;
     position: absolute;
