@@ -179,3 +179,4 @@ mail.addEventListener("click", () => {
   navigator.clipboard.writeText("dzg.contact2022@gmail.com");
   mbc.classList.toggle("copied");
 });
+let dmbtn = document.querySelector(".dmbtn");
