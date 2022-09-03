@@ -22,9 +22,11 @@
     --greeen: #1fe07c;
     --bluue: #39a6da;
     --bluesoft: #67dec8;
-    --ecriture: #f1f1f1;
-    --fond: #262626;
-    --fond2: #dcdcdc;
+    --ecriture: rgb(241, 241, 241);
+    /* --fond: #262626; */
+    --fond: rgb(38, 38, 38);
+    /* --fond2: #dcdcdc; */
+    --fond2: #262626;
 }
 
 * {
@@ -200,22 +202,22 @@ nav {
 }
 
 #l1 {
-    background: url(./objet/ukflag.jpg) no-repeat center;
+    background: url(./objet/ukflag.png) no-repeat center;
     background-size: cover;
 }
 
 #l2 {
-    background: url(./objet/frenchflag.jpg) center;
+    background: url(./objet/frenchflag.png) center;
     background-size: cover;
 }
 
 #l3 {
-    background: url(./objet/germanyflag.jpg) center;
+    background: url(./objet/germanyflag.png) center;
     background-size: cover;
 }
 
 #l4 {
-    background: url(./objet/spanishflag.jpg) center;
+    background: url(./objet/spanishflag.png) center;
     background-size: cover;
 }
 
@@ -422,14 +424,15 @@ nav {
         width: 0%;
         height: 100vh;
         position: absolute;
-        top: 70px;
+        top: 0px;
         left: 0px;
         background: var(--fond);
         ;
         transition: all .4s ease-in-out;
-        z-index: 2;
+        z-index: 1;
         overflow: hidden;
         margin: 0px;
+        padding-top: 70px;
         box-shadow: 5px 9px 10px 0px rgba(0, 0, 0, 0.4);
 
     }
@@ -1109,12 +1112,13 @@ h2 {
 
 
 
-#c1 {
+/* #c1 {
     background: linear-gradient(215deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: -10px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232);
 
-}
+} */
+
 
 /* #c1:hover {
     background: linear-gradient(215deg, #dadada, #ffffff);
@@ -1123,17 +1127,30 @@ h2 {
 
 } */
 
-.c1clicked {
+/* .c1clicked {
     background: var(--fond2) !important;
     box-shadow: inset -19px 19px 19px rgb(198, 198, 198), inset 19px -19px 19px rgb(235, 235, 235), -10px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232) !important;
+} */
+
+#c1 {
+    background: linear-gradient(215deg, #292929, #222222);
+    box-shadow: -10px 10px 10px #202020,
+        0px -10px 10px #2c2c2c;
+
 }
 
-#c2 {
+.c1clicked {
+    background: var(--fond2) !important;
+    box-shadow: inset -19px 19px 19px #202020, inset 19px -19px 19px #2c2c2c, -10px 10px 10px #202020,
+        0px -10px 10px #2c2c2c !important;
+}
+
+/* #c2 {
     background: linear-gradient(180deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 0px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232);
-}
+} */
 
 /* #c2:hover {
     background: linear-gradient(180deg, #dadada, #ffffff);
@@ -1141,17 +1158,28 @@ h2 {
         0px -10px 10px rgb(245, 245, 245);
 } */
 
-.c2clicked {
+/* .c2clicked {
     background: var(--fond2) !important;
     box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232) !important;
+} */
+#c2 {
+    background: linear-gradient(180deg, #292929, #222222);
+    box-shadow: 0px 10px 10px #202020,
+        0px -10px 10px #2c2c2c;
 }
 
-#c3 {
+.c2clicked {
+    background: var(--fond2) !important;
+    box-shadow: inset 0px 19px 19px #202020, inset 0px -19px 19px #2c2c2c, 0px 10px 10px #202020,
+        0px -10px 10px #2c2c2c !important;
+}
+
+/* #c3 {
     background: linear-gradient(145deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 10px 10px 10px rgb(198, 198, 198),
         -0px -10px 10px rgb(232, 232, 232);
-}
+} */
 
 /* #c3:hover {
     background: linear-gradient(145deg, rgb(218, 218, 218), rgb(255, 255, 255));
@@ -1159,10 +1187,22 @@ h2 {
         -10px -10px 10px rgb(245, 245, 245);
 } */
 
-.c3clicked {
+/* .c3clicked {
     background: var(--fond2) !important;
     box-shadow: inset 19px 19px 19px rgb(198, 198, 198), inset -19px -19px 19px rgb(235, 235, 235), 10px 10px 10px rgb(198, 198, 198),
         -0px -10px 10px rgb(232, 232, 232) !important;
+} */
+
+#c3 {
+    background: linear-gradient(145deg, #292929, #222222);
+    box-shadow: 10px 10px 10px #202020,
+        -0px -10px 10px #2c2c2c;
+}
+
+.c3clicked {
+    background: var(--fond2) !important;
+    box-shadow: inset 19px 19px 19px #202020, inset -19px -19px 19px #2c2c2c, 10px 10px 10px #202020,
+        -0px -10px 10px #2c2c2c !important;
 }
 
 .pc {
@@ -1194,11 +1234,11 @@ h2 {
         transform: translateY(0);
     }
 
-    .c123 {
+    /* .c123 {
         background: linear-gradient(180deg, rgb(230, 230, 230), rgb(208, 208, 208)) !important;
         box-shadow: 0px 10px 10px rgb(198, 198, 198),
             0px -10px 10px rgb(232, 232, 232) !important;
-    }
+    } */
 
     /* .c123:hover {
         background: linear-gradient(180deg, #dadada, #ffffff);
@@ -1206,7 +1246,7 @@ h2 {
             0px -10px 10px rgb(245, 245, 245);
     } */
 
-    .c1clicked {
+    /* .c1clicked {
         background: var(--fond2) !important;
         box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
             0px -10px 10px rgb(232, 232, 232) !important;
@@ -1223,6 +1263,31 @@ h2 {
         box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
             0px -10px 10px rgb(232, 232, 232) !important;
     }
+     */
+    .c123 {
+        background: linear-gradient(180deg, #292929, #222222) !important;
+        box-shadow: 0px 10px 10px #202020,
+            0px -10px 10px #2c2c2c !important;
+    }
+
+    .c1clicked {
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px #202020, inset 0px -19px 19px #2c2c2c, 0px 10px 10px #202020,
+            0px -10px 10px #2c2c2c !important;
+    }
+
+    .c2clicked {
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px #202020, inset 0px -19px 19px #2c2c2c, 0px 10px 10px #202020,
+            0px -10px 10px #2c2c2c !important;
+    }
+
+    .c3clicked {
+        background: var(--fond2) !important;
+        box-shadow: inset 0px 19px 19px #202020, inset 0px -19px 19px #2c2c2c, 0px 10px 10px #202020,
+            0px -10px 10px #2c2c2c !important;
+    }
+
 }
 
 /*******************/
