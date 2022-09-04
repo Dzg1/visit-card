@@ -180,3 +180,6 @@ mail.addEventListener("click", () => {
   mbc.classList.toggle("copied");
 });
 let dmbtn = document.querySelector(".dmbtn");
+dmbtn.addEventListener("click", () => {
+  dmbtn.classList.toggle("dmActived");
+});
