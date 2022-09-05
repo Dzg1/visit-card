@@ -190,9 +190,25 @@ let dmbtn = document.querySelector(".dmbtn");
 let dmi = document.querySelector(".dmi");
 let varFond = "--fond";
 let varFond2 = "--fond2";
+let ecriture = "ecriture";
 console.log(varFond);
+// dmbtn.addEventListener("click", () => {
+//   dmi.classList.toggle("dmActived");
+//   document.documentElement.style.setProperty(varFond, "#262626");
+//   document.documentElement.style.setProperty(varFond2, "#262626");
+//   document.documentElement.style.setProperty(varFond2, "#f1f1f1");
+// });
+let dmClickedFond = false;
+let dmClickedFond2 = false;
+
 dmbtn.addEventListener("click", () => {
   dmi.classList.toggle("dmActived");
-  document.documentElement.style.setProperty(varFond, "#262626");
-  document.documentElement.style.setProperty(varFond2, "#262626");
+  dmClickedFond = !dmClickedFond;
+  dmClickedFond
+    ? document.documentElement.style.setProperty(varFond, "#262626")
+    : document.documentElement.style.setProperty(varFond, "#f1f1f1");
+  dmClickedFond2 = !dmClickedFond2;
+  dmClickedFond2
+    ? document.documentElement.style.setProperty(varFond2, "#262626")
+    : document.documentElement.style.setProperty(varFond2, "#dcdcdc");
 });
