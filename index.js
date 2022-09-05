@@ -166,15 +166,10 @@ const dmm = document.querySelector(".dmm");
 console.log(dmm);
 const areg2 = document.querySelector(".areg2");
 console.log(areg2);
-areg2.addEventListener("mouseenter", () => {
+areg2.addEventListener("click", () => {
   dmm.classList.toggle("toggle2");
 });
-areg2.addEventListener("mouseleave", () => {
-  dmm.classList.remove("toggle2");
-});
-dmm.addEventListener("mouseenter", () => {
-  dmm.classList.toggle("toggle2");
-});
+
 dmm.addEventListener("mouseleave", () => {
   dmm.classList.remove("toggle2");
 });
@@ -192,6 +187,12 @@ mail.addEventListener("click", () => {
   mbc.classList.toggle("copied");
 });
 let dmbtn = document.querySelector(".dmbtn");
+let dmi = document.querySelector(".dmi");
+let varFond = "--fond";
+let varFond2 = "--fond2";
+console.log(varFond);
 dmbtn.addEventListener("click", () => {
-  dmbtn.classList.toggle("dmActived");
+  dmi.classList.toggle("dmActived");
+  document.documentElement.style.setProperty(varFond, "#262626");
+  document.documentElement.style.setProperty(varFond2, "#262626");
 });

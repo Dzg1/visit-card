@@ -22,11 +22,11 @@
     --greeen: #1fe07c;
     --bluue: #39a6da;
     --bluesoft: #67dec8;
-    --ecriture: rgb(241, 241, 241);
+    --ecriture: black;
+    --fond: #f1f1f1;
     /* --fond: #262626; */
-    --fond: rgb(38, 38, 38);
-    /* --fond2: #dcdcdc; */
-    --fond2: #262626;
+    --fond2: #dcdcdc;
+    /* --fond2: #262626; */
 }
 
 * {
@@ -268,7 +268,9 @@ nav {
     transition: .5s;
 }
 
-.dmActived {}
+.dmActived {
+    left: 30px;
+}
 
 .toggle2 {
     height: 50px;
@@ -690,8 +692,6 @@ nav {
     padding-top: 100px;
     color: var(--ecriture);
 }
-
-
 
 
 
