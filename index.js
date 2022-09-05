@@ -159,12 +159,24 @@ console.log(main);
 areg1.addEventListener("click", () => {
   main.classList.toggle("toggle");
 });
+main.addEventListener("mouseleave", () => {
+  main.classList.remove("toggle");
+});
 const dmm = document.querySelector(".dmm");
 console.log(dmm);
 const areg2 = document.querySelector(".areg2");
 console.log(areg2);
-areg2.addEventListener("click", () => {
+areg2.addEventListener("mouseenter", () => {
   dmm.classList.toggle("toggle2");
+});
+areg2.addEventListener("mouseleave", () => {
+  dmm.classList.remove("toggle2");
+});
+dmm.addEventListener("mouseenter", () => {
+  dmm.classList.toggle("toggle2");
+});
+dmm.addEventListener("mouseleave", () => {
+  dmm.classList.remove("toggle2");
 });
 let tbc = document.querySelector(".telBubbleCard");
 let mbc = document.querySelector(".mailBubbleCard");
