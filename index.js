@@ -200,6 +200,9 @@ console.log(varFond);
 // });
 let dmClickedFond = false;
 let dmClickedFond2 = false;
+let dmImg = false;
+let imgTitle = document.querySelector("logotitle");
+console.log(imgTitile);
 
 dmbtn.addEventListener("click", () => {
   dmi.classList.toggle("dmActived");
@@ -211,4 +214,6 @@ dmbtn.addEventListener("click", () => {
   dmClickedFond2
     ? document.documentElement.style.setProperty(varFond2, "#262626")
     : document.documentElement.style.setProperty(varFond2, "#dcdcdc");
+  dmImg = !dmImg;
+  dmImg ? (imgTitle.src = "darkdzg.gif") : (imgTitle.src = "dzg.gif");
 });
