@@ -93,6 +93,7 @@ let c2Clicked = false;
 let c3Clicked = false;
 
 card1.addEventListener("click", () => {
+  c1.classList.toggle("c1Dark");
   c1Clicked = !c1Clicked;
   c1Clicked
     ? card1.classList.add("c1clicked")
@@ -201,8 +202,19 @@ console.log(varFond);
 let dmClickedFond = false;
 let dmClickedFond2 = false;
 let dmImg = false;
-let imgTitle = document.querySelector("logotitle");
-console.log(imgTitile);
+let dmc1 = false;
+let dmc1box = false;
+
+let imgTitle = document.querySelector("#imglogotitle");
+console.log(imgTitle);
+let c1 = document.querySelector("#c1");
+let c1Dark = document.querySelector(".c1Dark");
+let c2 = document.querySelector("#c2");
+let c2Dark = document.querySelector(".c2Dark");
+let c3 = document.querySelector("#c3");
+let c3Dark = document.querySelector(".c3Dark");
+let c1click = document.querySelector(".c1clicked");
+console.log(c1);
 
 dmbtn.addEventListener("click", () => {
   dmi.classList.toggle("dmActived");
@@ -215,5 +227,11 @@ dmbtn.addEventListener("click", () => {
     ? document.documentElement.style.setProperty(varFond2, "#262626")
     : document.documentElement.style.setProperty(varFond2, "#dcdcdc");
   dmImg = !dmImg;
-  dmImg ? (imgTitle.src = "darkdzg.gif") : (imgTitle.src = "dzg.gif");
+  dmImg
+    ? (imgTitle.src = "./objet/darkDzg.gif")
+    : (imgTitle.src = "./objet/dzg.gif");
+
+  c1.classList.toggle("c1Dark");
+  c2.classList.toggle("c2Dark");
+  c3.classList.toggle("c3Dark");
 });

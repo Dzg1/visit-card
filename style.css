@@ -268,6 +268,8 @@ nav {
     transition: .5s;
 }
 
+
+
 .dmActived {
     left: 30px;
 }
@@ -1137,12 +1139,12 @@ h2 {
 
 
 
-/* #c1 {
-    background: linear-gradient(215deg, rgb(230, 230, 230), rgb(208, 208, 208));
-    box-shadow: -10px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(232, 232, 232);
+#c1 {
+    background: linear-gradient(215deg, #e6e6e6, #d0d0d0);
+    box-shadow: -10px 10px 10px #c6c6c6,
+        0px -10px 10px #e8e8e8;
 
-} */
+}
 
 
 /* #c1:hover {
@@ -1152,30 +1154,30 @@ h2 {
 
 } */
 
-/* .c1clicked {
+.c1clicked {
     background: var(--fond2) !important;
-    box-shadow: inset -19px 19px 19px rgb(198, 198, 198), inset 19px -19px 19px rgb(235, 235, 235), -10px 10px 10px rgb(198, 198, 198),
-        0px -10px 10px rgb(232, 232, 232) !important;
-} */
+    box-shadow: inset -19px 19px 19px #c6c6c6, inset 19px -19px 19px #ebebeb, -10px 10px 10px #c6c6c6,
+        0px -10px 10px #e8e8e8 !important;
+}
 
-#c1 {
-    background: linear-gradient(215deg, #292929, #222222);
+.c1Dark {
+    background: linear-gradient(215deg, #292929, #222222) !important;
     box-shadow: -10px 10px 10px #202020,
-        0px -10px 10px #2c2c2c;
+        0px -10px 10px #2c2c2c !important;
 
 }
 
-.c1clicked {
+.c1clickedDark {
     background: var(--fond2) !important;
     box-shadow: inset -19px 19px 19px #202020, inset 19px -19px 19px #2c2c2c, -10px 10px 10px #202020,
         0px -10px 10px #2c2c2c !important;
 }
 
-/* #c2 {
+#c2 {
     background: linear-gradient(180deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 0px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232);
-} */
+}
 
 /* #c2:hover {
     background: linear-gradient(180deg, #dadada, #ffffff);
@@ -1183,28 +1185,29 @@ h2 {
         0px -10px 10px rgb(245, 245, 245);
 } */
 
-/* .c2clicked {
+.c2clicked {
     background: var(--fond2) !important;
     box-shadow: inset 0px 19px 19px rgb(198, 198, 198), inset 0px -19px 19px rgb(235, 235, 235), 0px 10px 10px rgb(198, 198, 198),
         0px -10px 10px rgb(232, 232, 232) !important;
-} */
-#c2 {
-    background: linear-gradient(180deg, #292929, #222222);
-    box-shadow: 0px 10px 10px #202020,
-        0px -10px 10px #2c2c2c;
 }
 
-.c2clicked {
+.c2Dark {
+    background: linear-gradient(180deg, #292929, #222222) !important;
+    box-shadow: 0px 10px 10px #202020,
+        0px -10px 10px #2c2c2c !important;
+}
+
+.c2clickedDark {
     background: var(--fond2) !important;
     box-shadow: inset 0px 19px 19px #202020, inset 0px -19px 19px #2c2c2c, 0px 10px 10px #202020,
         0px -10px 10px #2c2c2c !important;
 }
 
-/* #c3 {
+#c3 {
     background: linear-gradient(145deg, rgb(230, 230, 230), rgb(208, 208, 208));
     box-shadow: 10px 10px 10px rgb(198, 198, 198),
         -0px -10px 10px rgb(232, 232, 232);
-} */
+}
 
 /* #c3:hover {
     background: linear-gradient(145deg, rgb(218, 218, 218), rgb(255, 255, 255));
@@ -1212,19 +1215,19 @@ h2 {
         -10px -10px 10px rgb(245, 245, 245);
 } */
 
-/* .c3clicked {
+.c3clicked {
     background: var(--fond2) !important;
     box-shadow: inset 19px 19px 19px rgb(198, 198, 198), inset -19px -19px 19px rgb(235, 235, 235), 10px 10px 10px rgb(198, 198, 198),
         -0px -10px 10px rgb(232, 232, 232) !important;
-} */
-
-#c3 {
-    background: linear-gradient(145deg, #292929, #222222);
-    box-shadow: 10px 10px 10px #202020,
-        -0px -10px 10px #2c2c2c;
 }
 
-.c3clicked {
+.c3Dark {
+    background: linear-gradient(145deg, #292929, #222222) !important;
+    box-shadow: 10px 10px 10px #202020,
+        -0px -10px 10px #2c2c2c !important;
+}
+
+.c3clickedDark {
     background: var(--fond2) !important;
     box-shadow: inset 19px 19px 19px #202020, inset -19px -19px 19px #2c2c2c, 10px 10px 10px #202020,
         -0px -10px 10px #2c2c2c !important;
