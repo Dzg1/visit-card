@@ -91,14 +91,22 @@ logorso5.addEventListener("mouseout", () => {
 let c1Clicked = false;
 let c2Clicked = false;
 let c3Clicked = false;
+let c1NoClicked = false;
+let c2NoClicked = false;
+let c3NoClicked = false;
 
 card1.addEventListener("click", () => {
-  c1.classList.toggle("c1Dark");
-  c1Clicked = !c1Clicked;
-  c1Clicked
-    ? card1.classList.add("c1clicked")
-    : card1.classList.remove("c1clicked");
-  console.log(c1Clicked);
+  if ((darkMode = false)) {
+    c1Clicked = !c1Clicked;
+    c1Clicked
+      ? card1.classList.add("c1clicked")
+      : card1.classList.remove("c1clicked");
+    c1NoCliCked = !c1NoClicked;
+    c1NoClicked
+      ? card1.classList.remove("c1noclicked")
+      : card1.classList.add("c1noclicked");
+  } else {
+  }
 });
 
 card2.addEventListener("click", () => {
@@ -106,7 +114,10 @@ card2.addEventListener("click", () => {
   c2Clicked
     ? card2.classList.add("c2clicked")
     : card2.classList.remove("c2clicked");
-  console.log(c2Clicked);
+  c2NoCliCked = !c2NoClicked;
+  c2NoClicked
+    ? card3.classList.remove("c2noclicked")
+    : card3.classList.add("c2noclicked");
 });
 
 card3.addEventListener("click", () => {
@@ -114,7 +125,10 @@ card3.addEventListener("click", () => {
   c3Clicked
     ? card3.classList.add("c3clicked")
     : card3.classList.remove("c3clicked");
-  console.log(c3Clicked);
+  c3NoCliCked = !c3NoClicked;
+  c3NoClicked
+    ? card3.classList.remove("c3noclicked")
+    : card3.classList.add("c3noclicked");
 });
 
 /******like********/
@@ -154,9 +168,7 @@ function activeLink() {
 list.forEach((item) => item.addEventListener("click", activeLink));
 
 const areg1 = document.querySelector(".areg1");
-console.log(areg1);
 const main = document.querySelector("#main");
-console.log(main);
 areg1.addEventListener("click", () => {
   main.classList.toggle("toggle");
 });
@@ -164,9 +176,7 @@ main.addEventListener("mouseleave", () => {
   main.classList.remove("toggle");
 });
 const dmm = document.querySelector(".dmm");
-console.log(dmm);
 const areg2 = document.querySelector(".areg2");
-console.log(areg2);
 areg2.addEventListener("click", () => {
   dmm.classList.toggle("toggle2");
 });
@@ -191,8 +201,7 @@ let dmbtn = document.querySelector(".dmbtn");
 let dmi = document.querySelector(".dmi");
 let varFond = "--fond";
 let varFond2 = "--fond2";
-let ecriture = "ecriture";
-console.log(varFond);
+let ecriture = "--ecriture";
 // dmbtn.addEventListener("click", () => {
 //   dmi.classList.toggle("dmActived");
 //   document.documentElement.style.setProperty(varFond, "#262626");
@@ -204,9 +213,10 @@ let dmClickedFond2 = false;
 let dmImg = false;
 let dmc1 = false;
 let dmc1box = false;
+let darkMode = false;
+let dmEcriture = false;
 
 let imgTitle = document.querySelector("#imglogotitle");
-console.log(imgTitle);
 let c1 = document.querySelector("#c1");
 let c1Dark = document.querySelector(".c1Dark");
 let c2 = document.querySelector("#c2");
@@ -214,9 +224,9 @@ let c2Dark = document.querySelector(".c2Dark");
 let c3 = document.querySelector("#c3");
 let c3Dark = document.querySelector(".c3Dark");
 let c1click = document.querySelector(".c1clicked");
-console.log(c1);
 
 dmbtn.addEventListener("click", () => {
+  darkMode = !darkMode;
   dmi.classList.toggle("dmActived");
   dmClickedFond = !dmClickedFond;
   dmClickedFond
@@ -230,6 +240,10 @@ dmbtn.addEventListener("click", () => {
   dmImg
     ? (imgTitle.src = "./objet/darkDzg.gif")
     : (imgTitle.src = "./objet/dzg.gif");
+  dmEcriture = !dmEcriture;
+  dmEcriture
+    ? document.documentElement.style.setProperty(ecriture, "white")
+    : document.documentElement.style.setProperty(ecriture, "black");
 
   c1.classList.toggle("c1Dark");
   c2.classList.toggle("c2Dark");
