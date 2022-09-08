@@ -94,20 +94,8 @@ let c3Clicked = false;
 let c1NoClicked = false;
 let c2NoClicked = false;
 let c3NoClicked = false;
-
-card1.addEventListener("click", () => {
-  if ((darkMode = false)) {
-    c1Clicked = !c1Clicked;
-    c1Clicked
-      ? card1.classList.add("c1clicked")
-      : card1.classList.remove("c1clicked");
-    c1NoCliCked = !c1NoClicked;
-    c1NoClicked
-      ? card1.classList.remove("c1noclicked")
-      : card1.classList.add("c1noclicked");
-  } else {
-  }
-});
+let c1ClickedDark = false;
+let c1noClickedDark = false;
 
 card2.addEventListener("click", () => {
   c2Clicked = !c2Clicked;
@@ -227,6 +215,7 @@ let c1click = document.querySelector(".c1clicked");
 
 dmbtn.addEventListener("click", () => {
   darkMode = !darkMode;
+  darkMode;
   dmi.classList.toggle("dmActived");
   dmClickedFond = !dmClickedFond;
   dmClickedFond
@@ -244,8 +233,30 @@ dmbtn.addEventListener("click", () => {
   dmEcriture
     ? document.documentElement.style.setProperty(ecriture, "white")
     : document.documentElement.style.setProperty(ecriture, "black");
-
-  c1.classList.toggle("c1Dark");
-  c2.classList.toggle("c2Dark");
-  c3.classList.toggle("c3Dark");
+  console.log(darkMode);
 });
+
+// if ((darkMode = false)) {
+card1.addEventListener("click", () => {
+  c1Clicked = !c1Clicked;
+  c1Clicked
+    ? card1.classList.add("c1clicked")
+    : card1.classList.remove("c1clicked");
+  c1NoClicked = !c1NoClicked;
+  c1NoClicked
+    ? card1.classList.remove("c1noclicked")
+    : card1.classList.add("c1noclicked");
+});
+
+// }
+//   //card1.addEventListener("click", () => {
+//     c1ClickedDark = !c1ClickedDark;
+//     c1ClickedDark
+//       ? card1.classList.add("c1clickedDark")
+//       : card1.classList.remove("c1clickedDark");
+//     c1noClickedDark = !c1noClickedDark;
+//     c1noClickedDark
+//       ? card1.classList.remove(".c1Dark")
+//       : card1.classList.add(".c1Dark");
+//   });
+// }//

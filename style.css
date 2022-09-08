@@ -1161,16 +1161,16 @@ h2 {
 }
 
 .c1Dark {
-    background: linear-gradient(215deg, #292929, #222222) !important;
+    background: linear-gradient(215deg, #292929, #222222);
     box-shadow: -10px 10px 10px #202020,
-        0px -10px 10px #2c2c2c !important;
+        0px -10px 10px #2c2c2c;
 
 }
 
 .c1clickedDark {
-    background: var(--fond2) !important;
+    background: var(--fond2);
     box-shadow: inset -19px 19px 19px #202020, inset 19px -19px 19px #2c2c2c, -10px 10px 10px #202020,
-        0px -10px 10px #2c2c2c !important;
+        0px -10px 10px #2c2c2c;
 }
 
 .c2noclicked {
