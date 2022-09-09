@@ -197,10 +197,13 @@ let c2Dark = document.querySelector(".c2Dark");
 let c3 = document.querySelector("#c3");
 let c3Dark = document.querySelector(".c3Dark");
 let c1click = document.querySelector(".c1clicked");
+let fondbtn = document.querySelector(".dmbtn");
 
 dmbtn.addEventListener("click", () => {
   darkMode = !darkMode;
   darkMode;
+  fondbtn.classList.toggle("dmbtndark");
+  dmi.classList.toggle("dmidark");
   dmi.classList.toggle("dmActived");
   dmClickedFond = !dmClickedFond;
   dmClickedFond
