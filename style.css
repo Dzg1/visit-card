@@ -34,6 +34,7 @@
     box-sizing: border-box;
     text-decoration: none;
     -webkit-user-select: none;
+    transition: background-color 0s ease-out;
 }
 
 html {
@@ -124,8 +125,8 @@ nav {
     background: var(--fond);
     ;
     padding: 40px 10px 0px 10px;
-    border-radius: 0px 0px 5px 5px;
-    border: teal solid 1px;
+
+    /* border: teal solid 1px; */
 }
 
 
@@ -291,6 +292,10 @@ nav {
 }
 
 @media screen and (min-width:700px) {
+
+    * {
+        transition: background-color 0s;
+    }
 
     .anav::after {
         display: block;
