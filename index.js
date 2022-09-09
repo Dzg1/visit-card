@@ -88,37 +88,6 @@ logorso5.addEventListener("mouseout", () => {
 
 /************card***************/
 
-let c1Clicked = false;
-let c2Clicked = false;
-let c3Clicked = false;
-let c1NoClicked = false;
-let c2NoClicked = false;
-let c3NoClicked = false;
-let c1ClickedDark = false;
-let c1noClickedDark = false;
-
-card2.addEventListener("click", () => {
-  c2Clicked = !c2Clicked;
-  c2Clicked
-    ? card2.classList.add("c2clicked")
-    : card2.classList.remove("c2clicked");
-  c2NoCliCked = !c2NoClicked;
-  c2NoClicked
-    ? card3.classList.remove("c2noclicked")
-    : card3.classList.add("c2noclicked");
-});
-
-card3.addEventListener("click", () => {
-  c3Clicked = !c3Clicked;
-  c3Clicked
-    ? card3.classList.add("c3clicked")
-    : card3.classList.remove("c3clicked");
-  c3NoCliCked = !c3NoClicked;
-  c3NoClicked
-    ? card3.classList.remove("c3noclicked")
-    : card3.classList.add("c3noclicked");
-});
-
 /******like********/
 const oui = document.getElementById("oui");
 const labeloui = document.getElementById("labeloui");
@@ -199,10 +168,26 @@ let ecriture = "--ecriture";
 let dmClickedFond = false;
 let dmClickedFond2 = false;
 let dmImg = false;
-let dmc1 = false;
-let dmc1box = false;
 let darkMode = false;
 let dmEcriture = false;
+let c1ToC1Dark = false;
+let C1DarkToC1 = false;
+let c2ToC2Dark = false;
+let C2DarkToC2 = false;
+let c3ToC3Dark = false;
+let C3DarkToC3 = false;
+let c1Clicked = false;
+let c2Clicked = false;
+let c3Clicked = false;
+let c1NoClicked = false;
+let c2NoClicked = false;
+let c3NoClicked = false;
+let c1ClickedDark = false;
+let c1noClickedDark = false;
+let c2ClickedDark = false;
+let c2noClickedDark = false;
+let c3ClickedDark = false;
+let c3noClickedDark = false;
 
 let imgTitle = document.querySelector("#imglogotitle");
 let c1 = document.querySelector("#c1");
@@ -233,30 +218,94 @@ dmbtn.addEventListener("click", () => {
   dmEcriture
     ? document.documentElement.style.setProperty(ecriture, "white")
     : document.documentElement.style.setProperty(ecriture, "black");
-  console.log(darkMode);
-});
-
-// if ((darkMode = false)) {
-card1.addEventListener("click", () => {
-  c1Clicked = !c1Clicked;
-  c1Clicked
-    ? card1.classList.add("c1clicked")
-    : card1.classList.remove("c1clicked");
-  c1NoClicked = !c1NoClicked;
-  c1NoClicked
+  c1ToC1Dark = !c1ToC1Dark;
+  c1ToC1Dark ? card1.classList.add("c1Dark") : card1.classList.remove("c1Dark");
+  C1DarkToC1 = !C1DarkToC1;
+  C1DarkToC1
     ? card1.classList.remove("c1noclicked")
     : card1.classList.add("c1noclicked");
+  card1.classList.remove("c1clicked");
+  card1.classList.remove("c1clickedDark");
+
+  c2ToC2Dark = !c2ToC2Dark;
+  c2ToC2Dark ? card2.classList.add("c2Dark") : card2.classList.remove("c2Dark");
+  C2DarkToC2 = !C2DarkToC2;
+  C2DarkToC2
+    ? card2.classList.remove("c2noclicked")
+    : card2.classList.add("c2noclicked");
+  card2.classList.remove("c2clicked");
+  card2.classList.remove("c2clickedDark");
+
+  c3ToC3Dark = !c3ToC3Dark;
+  c3ToC3Dark ? card3.classList.add("c1Dark") : card3.classList.remove("c3Dark");
+  C3DarkToC3 = !C3DarkToC3;
+  C3DarkToC3
+    ? card3.classList.remove("c3noclicked")
+    : card3.classList.add("c3noclicked");
+  card3.classList.remove("c3clicked");
+  card3.classList.remove("c3clickedDark");
 });
 
-// }
-//   //card1.addEventListener("click", () => {
-//     c1ClickedDark = !c1ClickedDark;
-//     c1ClickedDark
-//       ? card1.classList.add("c1clickedDark")
-//       : card1.classList.remove("c1clickedDark");
-//     c1noClickedDark = !c1noClickedDark;
-//     c1noClickedDark
-//       ? card1.classList.remove(".c1Dark")
-//       : card1.classList.add(".c1Dark");
-//   });
-// }//
+card1.addEventListener("click", () => {
+  if (darkMode == false) {
+    c1Clicked = !c1Clicked;
+    c1Clicked
+      ? card1.classList.add("c1clicked")
+      : card1.classList.remove("c1clicked");
+    c1NoClicked = !c1NoClicked;
+    c1NoClicked
+      ? card1.classList.remove("c1noclicked")
+      : card1.classList.add("c1noclicked");
+  } else {
+    c1ClickedDark = !c1ClickedDark;
+    c1ClickedDark
+      ? card1.classList.remove("c1clickedDark")
+      : card1.classList.add("c1clickedDark");
+    c1noClickedDark = !c1noClickedDark;
+    c1noClickedDark
+      ? card1.classList.add("c1Dark")
+      : card1.classList.remove("c1Dark");
+  }
+});
+card2.addEventListener("click", () => {
+  if (darkMode == false) {
+    c2Clicked = !c2Clicked;
+    c2Clicked
+      ? card2.classList.add("c2clicked")
+      : card2.classList.remove("c2clicked");
+    c2NoClicked = !c2NoClicked;
+    c2NoClicked
+      ? card2.classList.remove("c2noclicked")
+      : card2.classList.add("c2noclicked");
+  } else {
+    c2ClickedDark = !c2ClickedDark;
+    c2ClickedDark
+      ? card2.classList.remove("c2clickedDark")
+      : card2.classList.add("c2clickedDark");
+    c2noClickedDark = !c2noClickedDark;
+    c2noClickedDark
+      ? card2.classList.add("c2Dark")
+      : card2.classList.remove("c2Dark");
+  }
+});
+card3.addEventListener("click", () => {
+  if (darkMode == false) {
+    c3Clicked = !c3Clicked;
+    c3Clicked
+      ? card3.classList.add("c3clicked")
+      : card3.classList.remove("c3clicked");
+    c3NoClicked = !c3NoClicked;
+    c3NoClicked
+      ? card3.classList.remove("c3noclicked")
+      : card3.classList.add("c3noclicked");
+  } else {
+    c3ClickedDark = !c3ClickedDark;
+    c3ClickedDark
+      ? card3.classList.remove("c3clickedDark")
+      : card3.classList.add("c3clickedDark");
+    c3noClickedDark = !c3noClickedDark;
+    c3noClickedDark
+      ? card3.classList.add("c3Dark")
+      : card3.classList.remove("c3Dark");
+  }
+});
