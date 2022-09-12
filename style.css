@@ -293,9 +293,6 @@ nav {
 
 @media screen and (min-width:700px) {
 
-    * {
-        transition: background-color 0s;
-    }
 
     .anav::after {
         display: block;
